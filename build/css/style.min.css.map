@@ -1,1 +1,1 @@
-{"version":3,"sources":["scaffolding.scss"],"names":[],"mappings":"AAAA,E,CACE,a","file":"style.min.css","sourcesContent":["h1 {\n  color: #00ff90;\n}\n"]}
+{"version":3,"sources":["style.scss","scaffolding.scss"],"names":[],"mappings":"AAAA,mHCAA,I,CACE,iD,CAGF,E,CACE,a","file":"style.min.css","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=PT+Mono|Roboto+Condensed:400,700&display=swap&subset=cyrillic');\n\n@import \"scaffolding.scss\";\n","body {\n  font-family: 'Roboto Condensed', 'Arial', sans-serif;\n}\n\nh1 {\n  color: #00ff90;\n}\n"]}
