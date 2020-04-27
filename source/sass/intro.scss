@@ -5,13 +5,13 @@
 }
 
 .intro__title {
-  width: 718px;
+  width: 1000px;
   height: 94px;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
@@ -21,19 +21,19 @@
 
 .intro__message {
   position: relative;
-  width: 683px;
+  width: 623px;
   height: 70px;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
   padding-left: 93px;
-
   font-family: 'PT Mono', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
   color: #FFFFFF;
+
 }
 
 .intro__message:before{

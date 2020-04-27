@@ -11,4 +11,6 @@ node_modules/
 npm-debug.*
 source/css/*.css
 source/css/*.map
+source/fonts/*.woff
+source/fonts/*.woff-2
 Thumbs.db
