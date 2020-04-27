@@ -17,13 +17,13 @@
   display: inline-block;
   vertical-align: center;
   min-height: 20px;
-  font-family: 'PT Mono', 'Arial', sans-serif;
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .page-header__link {
@@ -31,9 +31,9 @@
   color: #ffffff;
 }
 
-@media(max-width: 1023px) {
+@media (max-width: 1023px) {
   .page-header__link-text {
-display: none;
+    display: none;
   }
 
   .page-header__navigation {

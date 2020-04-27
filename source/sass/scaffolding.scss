@@ -1,33 +1,31 @@
 @font-face {
-  font-family: 'Roboto Condensed';
-  src: url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
-  url('../fonts/robotocondensed-regular-webfont.woff') format('woff');
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed-regular-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'Roboto Condensed';
-  src: url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
-  url('../fonts/robotocondensed-bold-webfont.woff') format('woff');
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed-bold-webfont.woff2") format("woff2"),
+    url("../fonts/robotocondensed-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'PT Mono';
-  src: url('../fonts/ptmono-regular-webfont.woff2') format('woff2'),
-  url('../fonts/ptmono-regular-webfont.woff') format('woff');
+  font-family: "PT Mono";
+  src: url("../fonts/ptmono-regular-webfont.woff2") format("woff2"),
+    url("../fonts/ptmono-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 $mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
-$color-lightblue: #00B2FF;
+$tablet-width: 767px;
+$desktop-width: 1023px;
+$color-lightblue: #00b2ff;
 
 body {
   position: relative;
@@ -41,27 +39,25 @@ body {
   font-weight: 300;
   font-size: 15px;
   line-height: 1.5;
-  font-family: 'Roboto Condensed', 'Arial', sans-serif;
-  background-color: #C4C4C4;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  background-color: #c4c4c4;
   background-image: url("../img/header-image-desktop.png"),
-  url("../img/header-points-bg-desktop.png"),
+    url("../img/header-points-bg-desktop.png"),
     url("../img/body-bg-desktop.png"),
-  url("../img/body-bg-rect-desktop.png")
-  ;
+    url("../img/body-bg-rect-desktop.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 705px 515px, cover, 100% 881px, 100% 881px;
   background-position: 1030px 255px, 0 0, 0 0, 0 0;
-  //background-attachment: fixed;
   box-sizing: border-box;
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  body {
-    background-image: url("../img/header-image@2x-desktop.png"),
-    url("../img/body-bg-desktop.png"),
-    url("../img/body-bg-rect-desktop.png");
-  }
-}
+//@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+//  body {
+//    background-image: url("../img/header-image@2x-desktop.png"),
+//    url("../img/body-bg-desktop.png"),
+//    url("../img/body-bg-rect-desktop.png");
+//  }
+//}
 
 .visually-hidden {
   position: absolute;
@@ -85,44 +81,40 @@ img {
   height: auto;
 }
 
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
 
 .button {
-    box-sizing: border-box;
-    border-radius: 5px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-@media(max-width: 1023px) {
+@media (max-width: 1023px) {
   body {
     background-image: url("../img/header-image-tablet.png"),
-    url("../img/header-points-bg-tablet.png"),
-    url("../img/body-bg-tablet.png"),
-    url("../img/body-bg-rect-tablet.png")
-  ;
+      url("../img/header-points-bg-tablet.png"),
+      url("../img/body-bg-tablet.png"),
+      url("../img/body-bg-rect-tablet.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 260px 340px, 770px 563px, 100% 692px, 100% 692px;
     background-position: 100% 255px, 100% 135px, 0 0, 0 0;
   }
-
 }
 
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   body {
     background-image: url("../img/header-image-mobile.png"),
-    url("../img/header-points-bg-mobile.png"),
-    url("../img/body-bg-mobile.png"),
-    url("../img/body-bg-rect-mobile.png")
-  ;
+      url("../img/header-points-bg-mobile.png"),
+      url("../img/body-bg-mobile.png"),
+      url("../img/body-bg-rect-mobile.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 294px 220px, 320px 529px, 100% 647px, 100% 692px;
     background-position: 50% 100px, 100% 35px, 0 0, 0 0;
   }
-
 }
