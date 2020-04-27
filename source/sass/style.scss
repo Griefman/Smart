@@ -1,3 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Mono|Roboto+Condensed:400,700&display=swap&subset=cyrillic');
-
+@import "normalize.scss";
 @import "scaffolding.scss";
+@import "page-header.scss";
+@import "page-header__logo.scss";
+@import "page-header__navigation.scss";
+@import "page-header__order.scss";
+@import "page-main.scss";
+@import "intro.scss";
+
+

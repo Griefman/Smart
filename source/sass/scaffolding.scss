@@ -1,7 +1,102 @@
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$color-lightblue: #00B2FF;
+
 body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.5;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  background-color: #C4C4C4;
+  background-image: url("../img/header-image-desktop.png"),
+  url("../img/header-points-bg-desktop.png"),
+    url("../img/body-bg-desktop.png"),
+  url("../img/body-bg-rect-desktop.png")
+  ;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 705px 515px, cover, cover, 100% 881px;
+  background-position: 1030px 255px, 0 0, 0 0, 0 0;
+  //background-attachment: fixed;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #00ff90;
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  body {
+    background-image: url("../img/header-image@2x-desktop.png"),
+    url("../img/body-bg-desktop.png"),
+    url("../img/body-bg-rect-desktop.png");
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.display-hidden {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration:none;
+}
+
+.button {
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media(max-width: 1023px) {
+  body {
+    background-image: url("../img/header-image-tablet.png"),
+    url("../img/header-points-bg-tablet.png"),
+    url("../img/body-bg-tablet.png"),
+    url("../img/body-bg-rect-tablet.png")
+  ;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 260px 340px, 770px 563px, 100% 692px, 100% 692px;
+    background-position: 100% 255px, 100% 135px, 0 0, 0 0;
+  }
+
+}
+
+
+@media(max-width: 767px) {
+  body {
+    background-image: url("../img/header-image-mobile.png"),
+    url("../img/header-points-bg-mobile.png"),
+    url("../img/body-bg-mobile.png"),
+    url("../img/body-bg-rect-mobile.png")
+  ;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 294px 220px, 320px 529px, 100% 647px, 100% 692px;
+    background-position: 50% 100px, 100% 35px, 0 0, 0 0;
+  }
+
 }

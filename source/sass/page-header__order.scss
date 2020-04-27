@@ -1,0 +1,22 @@
+.page-header__order {
+  box-sizing: border-box;
+}
+
+.page-header__button {
+  padding: 14px 26px 13px 26px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+@media(max-width: 1023px) {
+  .page-header__order {
+    display: none;
+  }
+}

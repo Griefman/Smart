@@ -4,10 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<div class="main-background">
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link">
+          <p class="page-header__logo-image">
+            <img src="../img/icon-logo-desktop.svg" width="52" height="52" aria-label="логотип Smart Device" alt="Логотип">
+
+          </p>
+          <p class="page-header__logo-text">
+            <span class="page-header__logo-name">Smart Device</span>
+            <span class="page-header__logo-slogan">умные технологии</span>
+          </p>
+        </a>
+      </div>
+
+      <button class="page-header__toggle display-hidden" type="button"><span class="visually-hidden">Меню</span></button>
+      <nav class="page-header__navigation">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              <img src="../img/icon-email-desktop.svg" alt="Конверт" class="page-header__link-email">
+              <span class="page-header__link-text">info@sd.ru</span></a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              <img src="../img/icon-phone-desktop.svg" alt="Конверт" class="page-header__link-email">
+              <span class="page-header__link-text">+7 (495) 000 52 52</span> </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="page-header__order">
+        <button class="button page-header__button" type="button">Заказать звонок</button>
+      </div>
+    </div>
+
+  </header>
+
+
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <div class="intro">
+        <div class="intro__wrapper">
+          <h1 class="intro__title">Печатные платы </h1>
+          <p class="intro__message">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+
+          <div class="intro__button-container">
+            <button class="button intro__button-order button--long" type="button">Получить бесплатную консультацию</button>
+            <button class="button intro__button-order button--short" type="button">Бесплатная консультация</button>
+          </div>
+        </div>
+      </div>
+      <div class="intro-scroll">
+        <a href="#" class="intro-scroll__btn" type="button">Скролл вниз</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="page-footer">
+  </footer>
+
+</div>
+
 </body>
 </html>

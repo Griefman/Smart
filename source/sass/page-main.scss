@@ -1,0 +1,18 @@
+.page-main__wrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 13.5%;
+  padding-right: 13.5%;
+  box-sizing: border-box;
+}
+
+
+@media(max-width: 1023px) {
+  .page-main__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    max-width: 1023px;
+    margin: 0 auto;
+  }
+}
