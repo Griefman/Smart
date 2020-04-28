@@ -2,10 +2,11 @@
   width: 100%;
   margin: 0 auto;
   padding-top: 225px;
+  box-sizing: border-box;
 }
 
 .intro__title {
-  width: 1000px;
+  width: 900px;
   height: 94px;
   margin: 0;
   margin-bottom: 30px;
@@ -40,6 +41,8 @@
   content: "";
   width: 66px;
   height: 2px;
+  left: 0;
+  top: 15px;
   background: #ffffff;
 }
 
