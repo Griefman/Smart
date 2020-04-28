@@ -7,7 +7,7 @@
 
 .intro__title {
   width: 900px;
-  height: 94px;
+  height: auto;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -23,7 +23,7 @@
 .intro__message {
   position: relative;
   width: 623px;
-  height: 70px;
+  height: auto;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
@@ -68,7 +68,7 @@
 .intro-scroll {
   margin-left: -40px;
   width: 193px;
-  height: 16px;
+  min-height: 16px;
 }
 
 .intro-scroll__btn {
@@ -87,7 +87,7 @@
 @media (max-width: 1023px) {
   .intro__title {
     width: 470px;
-    height: 141px;
+    height: auto;
     left: 88px;
     top: 188px;
     font-size: 60px;
@@ -97,7 +97,7 @@
 
   .intro__message {
     width: 356px;
-    height: 70px;
+    height: auto;
     font-size: 18px;
     line-height: 156.8%;
   }
@@ -111,15 +111,15 @@
 @media (max-width: 767px) {
   .intro__title {
     width: 277px;
-    height: 94px;
+    height: auto;
 
     font-size: 40px;
     line-height: 47px;
   }
 
   .intro__message {
-    width: 245px;
-    height: 70px;
+    width: 100%;
+    height: auto;
     font-size: 16px;
   }
 
