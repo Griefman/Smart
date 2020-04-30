@@ -35,7 +35,7 @@
 }
 
 .features__item:hover .features__icon-watch path {
-  fill: #ffffff;
+  fill: $color-white;
 }
 
 .features__icon {
@@ -43,7 +43,7 @@
 }
 
 .features__item:hover .features__icon path {
-  fill: #ffffff;
+  fill: $color-white;
 }
 
 .features__icon-watch path {
@@ -69,7 +69,7 @@
 
 .features__item:hover .features__item-title,
 .features__item:hover .features__item-text {
-  color: #ffffff;
+  color: $color-white;
 }
 
 .features__item-text {

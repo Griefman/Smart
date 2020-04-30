@@ -17,7 +17,7 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .intro__message {
@@ -33,7 +33,7 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .intro__message::before {
@@ -43,7 +43,7 @@
   height: 2px;
   left: 0;
   top: 15px;
-  background: #ffffff;
+  background: $color-white;
 }
 
 .intro__button-order {
@@ -58,7 +58,7 @@
   line-height: 19px;
   text-transform: uppercase;
   background-color: $color-lightblue;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .button--short {
@@ -78,7 +78,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff;
+  color: $color-white;
   opacity: 0.5;
   background-color: transparent;
 }

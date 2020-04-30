@@ -23,12 +23,12 @@
   font-size: 16px;
   line-height: 18px;
 
-  color: #ffffff;
+  color: $color-white;
 }
 
 .page-header__link {
   display: flex;
-  color: #ffffff;
+  color: $color-white;
 }
 
 @media (max-width: $desktop-width) {

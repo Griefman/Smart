@@ -25,6 +25,7 @@
 $tablet-width: 767px;
 $desktop-width: 1023px;
 $color-lightblue: #00b2ff;
+$color-white: #ffffff;
 
 *,
 *::before,
@@ -49,13 +50,13 @@ body {
   overflow: auto;
   margin: 0;
   padding: 0;
-  color: #ffffff;
+  color: $color-white;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 1.5;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  background-color: #ffffff;
+  background-color: $color-white;
   background-image: url("../img/header-image-desktop.png"),
     url("../img/header-points-bg-desktop.png"),
     url("../img/body-bg-desktop.png"),
@@ -106,6 +107,7 @@ a {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  background-color: transparent;
   cursor: pointer;
 }
 

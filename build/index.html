@@ -217,6 +217,43 @@
   </main>
 
   <footer class="page-footer">
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <form action="/" method="POST">
+          <p class="contacts__form-title">Остались вопросы? Задайте их нам!</p>
+          <p class="contacts__form-text">Мы проконсультируем Вас бесплатно </p>
+
+          <div class="contacts__form-container">
+            <div class="contacts__form-field ">
+              <label for="name" class="visually-hidden"></label>
+              <input class="contacts__input" id="name" type="text" name="name" placeholder="Имя">
+            </div>
+
+            <div class="contacts__form-field form-field">
+              <label for="phone" class="visually-hidden"></label>
+              <input class="contacts__input" type="tel" id="phone" name="phone-number" placeholder="Телефон" aria-label="Телефон">
+            </div>
+
+            <div class="contacts__form-textarea">
+              <label for="question" class="visually-hidden"></label>
+              <textarea class="contacts__textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <button class="button contacts__form-button" type="submit">Отправить</button>
+
+
+            <div class="contacts__form-checkbox">
+              <input class="contacts__checkbox-input visually-hidden" type="checkbox" id="agreement" name="agreement" value="agreement">
+              <label class="contacts__checkbox-label" for="agreement">Я согласен на обработку персональных данных</label>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+
+    </section>
+
   </footer>
 
 </div>
