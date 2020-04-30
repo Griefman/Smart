@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $desktop-width) {
   .page-header__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -22,7 +22,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
   .page-header__container {
     padding-left: 30px;
     padding-right: 30px;

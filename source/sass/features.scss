@@ -20,7 +20,7 @@
   max-width: 570px;
   min-height: 299px;
   border: 1px solid #ebebeb; //#ebebeb
-  border-left: 3px solid #00b2ff;
+  border-left: 3px solid $color-lightblue;
   margin-bottom: 6%;
   padding-top: 40px;
   padding-left: 3%;
@@ -31,7 +31,7 @@
 
 .features__item:hover {
   border: none;
-  background-color: #00b2ff;
+  background-color: $color-lightblue;
 }
 
 .features__item:hover .features__icon-watch path {
@@ -47,7 +47,7 @@
 }
 
 .features__icon-watch path {
-  fill: #00b2ff;
+  fill: $color-lightblue;
 }
 
 .features__text {
@@ -64,7 +64,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 34px;
-  color: #00b2ff;
+  color: $color-lightblue;
 }
 
 .features__item:hover .features__item-title,
@@ -83,7 +83,7 @@
   color: #666666;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $desktop-width) {
   .features__wrapper {
     padding-left: 25px;
     padding-right: 25px;
@@ -96,13 +96,13 @@
     padding-left: 2%;
     padding-right: 1%;
     padding-bottom: 25px;
-    border-left: 2px solid #00b2ff;
+    border-left: 2px solid $color-lightblue;
     margin-bottom: 30px;
     box-sizing: border-box;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
   .features__wrapper {
     padding-left: 15px;
     padding-right: 15px;
@@ -116,7 +116,7 @@
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 25px;
-    border-left: 2px solid #00b2ff;
+    border-left: 2px solid $color-lightblue;
     margin-bottom: 30px;
   }
 }

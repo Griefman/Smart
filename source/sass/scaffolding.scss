@@ -22,7 +22,6 @@
   font-style: normal;
 }
 
-$mobile-width: 320px;
 $tablet-width: 767px;
 $desktop-width: 1023px;
 $color-lightblue: #00b2ff;
@@ -110,7 +109,7 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $desktop-width) {
   body {
     background-image: url("../img/header-image-tablet.png"),
       url("../img/header-points-bg-tablet.png"),
@@ -123,7 +122,7 @@ a {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
   body {
     background-image: url("../img/header-image-mobile.png"),
       url("../img/header-points-bg-mobile.png"),

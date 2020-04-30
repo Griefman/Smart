@@ -84,7 +84,7 @@
 }
 
 
-@media (max-width: 1023px) {
+@media (max-width: $desktop-width) {
   .intro__title {
     width: 470px;
     height: auto;
@@ -108,7 +108,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
   .intro__title {
     width: 277px;
     height: auto;

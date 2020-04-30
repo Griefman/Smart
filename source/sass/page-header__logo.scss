@@ -36,7 +36,7 @@
   color: #788891;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $desktop-width) {
   .page-header__logo-text {
     display: none;
   }

@@ -68,13 +68,13 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border: 1px solid #00b2ff;
+  border: 1px solid $color-lightblue;
   box-sizing: border-box;
-  color: #00b2ff;
+  color: $color-lightblue;
 }
 
 
-@media (max-width: 1023px) {
+@media (max-width: $desktop-width) {
   .company {
     padding-left: 25px;
     padding-right: 25px;
@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
   .company {
     padding-left: 15px;
     padding-right: 15px;

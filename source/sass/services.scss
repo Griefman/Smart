@@ -80,10 +80,10 @@
   height: 63px;
   bottom: 0;
   right: 0;
-  background: #00b2ff;
+  background: $color-lightblue;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $desktop-width) {
   .services__image-big,
   .services__image-small {
     display: none;
@@ -103,7 +103,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
   .services__image-big,
   .services__image-middle {
     display: none;
