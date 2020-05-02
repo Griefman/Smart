@@ -63,16 +63,16 @@ body {
     url("../img/body-bg-rect-desktop.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 705px 515px, 1920px 881px, 1920px 881px, 100% 881px;
-  background-position: 1030px 255px,  0 0, 0 0, 0 0;
+  background-position: 1030px 255px, 0 0, 0 0, 0 0;
   box-sizing: border-box;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   body {
     background-image: url("../img/header-image@2x-desktop.png"),
-    url("../img/header-points-bg-desktop.png"),
-    url("../img/body-bg-desktop.png"),
-    url("../img/body-bg-rect-desktop.png");
+      url("../img/header-points-bg-desktop.png"),
+      url("../img/body-bg-desktop.png"),
+      url("../img/body-bg-rect-desktop.png");
   }
 }
 

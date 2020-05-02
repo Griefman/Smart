@@ -10,9 +10,9 @@
   background-color: $color-lightblue;
 
   background-image: url("../img/footer-airplan.png"),
-  url("../img/header-points-bg-desktop.png"),
-  url("../img/footer-polygon-01.png"),
-  url("../img/footer-polygon-02.png");
+    url("../img/header-points-bg-desktop.png"),
+    url("../img/footer-polygon-01.png"),
+    url("../img/footer-polygon-02.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 511px 288px, 1920px 800px, 234px 234px, 373px 373px;
   //background-position: 10em 150px, -700px -150px, right 0, right 400px;
@@ -62,7 +62,7 @@
   background-color: $color-lightblue;
 }
 
-.contacts__input{
+.contacts__input {
   width: 270px;
   height: 50px;
   margin-bottom: 40px;
@@ -79,17 +79,20 @@
 }
 
 
-::-webkit-input-placeholder{/*WebKitbrowsers*/
-  color:$color-white;
+::-webkit-input-placeholder {/*WebKitbrowsers*/
+  color: $color-white;
 }
-:-moz-placeholder{/*MozillaFirefox4to18*/
-  color:$color-white;
+
+:-moz-placeholder {/*MozillaFirefox4to18*/
+  color: $color-white;
 }
-::-moz-placeholder{/*MozillaFirefox19+*/
-  color:$color-white;
+
+::-moz-placeholder {/*MozillaFirefox19+*/
+  color: $color-white;
 }
-:-ms-input-placeholder{/*InternetExplorer10+*/
-  color:$color-white;
+
+:-ms-input-placeholder {/*InternetExplorer10+*/
+  color: $color-white;
 }
 
 .contacts__form-textarea {
@@ -123,7 +126,7 @@
 .contacts__form-checkbox {
   width: 270px;
   height: auto;
-   font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -145,7 +148,7 @@
 
 .contacts__checkbox-input:checked ~ .contacts__checkbox-label[for="agreement"] {
   background-image: url("../img/checkbox-tic.png"),
-  url("../img/checkbox-rec.svg");
+    url("../img/checkbox-rec.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 10px 10px, 16px 16px;
   background-position: 3px 4px, 0 2px;
@@ -165,7 +168,7 @@
     width: 590px;
   }
 
-  .contacts__input{
+  .contacts__input {
     width: 280px;
   }
 }
