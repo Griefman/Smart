@@ -1,7 +1,7 @@
 @import "normalize.scss";
 @import "scaffolding.scss";
 @import "page-header.scss";
-@import "page-header__logo.scss";
+@import "page-header__logo";
 @import "page-header__navigation.scss";
 @import "page-header__order.scss";
 @import "page-main.scss";
@@ -10,3 +10,6 @@
 @import "company.scss";
 @import "services.scss";
 @import "contacts.scss";
+@import "info.scss";
+@import "footer-info.scss";
+@import "footer-info__social.scss";

@@ -1,0 +1,19 @@
+.footer-info__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-info__social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
