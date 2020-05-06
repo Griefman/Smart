@@ -1,0 +1,33 @@
+.footer-info__office {
+  width: 370px;
+  height: auto;
+}
+
+.footer-info__office-title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2d37;
+}
+
+.footer-info__office-tel,
+.footer-info__office-address {
+  font-family: "PT Mono", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #1b2d37;
+}
+
+.footer-info__office-address {
+  padding-right: 0;
+}

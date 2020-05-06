@@ -1,0 +1,59 @@
+.footer-info__site {
+  max-width: 570px;
+  height: auto;
+}
+
+.footer-info__site-title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2d37;
+}
+
+.footer-info__site-item {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #1b2d37;
+}
+
+.footer-info__site-columns {
+  /*-webkit-column-width: 200px;*/
+  /*-moz-column-width: 200px;*/
+  column-width: 250px;
+  /*-webkit-column-count: 3;*/
+  /*-moz-column-count: 3;*/
+  column-count: 2;
+  /*-webkit-column-gap: 30px;*/
+  /*-moz-column-gap: 30px;*/
+  column-gap: 60px;
+  /*-webkit-column-rule: 1px solid #ccc;*/
+  /*-moz-column-rule: 1px solid #ccc;*/
+}
+
+
+@media (max-width: $desktop-width) {
+  .footer-info__site {
+    width: 100%;
+  }
+
+  .footer-info__site-columns {
+    column-width: 767px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+
+}

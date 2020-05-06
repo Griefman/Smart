@@ -1,0 +1,35 @@
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  padding-left: 19%;
+  padding-right: 19%;
+  border-top: 1px solid rgba(98, 105, 98, 0.2);
+}
+
+.footer-bottom__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom__item {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1b2d37;
+}
+
+@media (max-width: $desktop-width) {
+  .footer-bottom__item--hidden {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+
+}

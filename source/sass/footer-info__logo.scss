@@ -1,0 +1,30 @@
+.footer-info__logo-name {
+  color: #203c42;
+}
+
+.footer-info__item {
+  display: none;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1b2d37;
+}
+
+@media (max-width: $desktop-width) {
+  .footer-info__container {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-info__item {
+    display: block;
+  }
+}
+
+@media (max-width: $tablet-width) {
+
+}

@@ -1,3 +1,30 @@
-.footer-info__logo-name {
-  color: #203c42;
+.footer-info {
+  width: 100%;
+  height: auto;
+  padding-top: 65px;
+  padding-left: 19%;
+  padding-right: 19%;
+}
+
+.footer-info__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  }
+
+@media (max-width: $desktop-width) {
+  //.footer-info {
+  //  padding-left: 25px;
+  //  padding-right: 25px;
+  //}
+  //
+  //.footer-info__container {
+  //  flex-basis: 100%;
+  //  background-color:red;
+  //}
+}
+
+@media (max-width: $tablet-width) {
+
 }
