@@ -1,11 +1,14 @@
 .page-header__navigation {
-  min-width: 350px;
   height: auto;
+  margin-left: auto;
+  margin-right: 48px;
 }
 
 .page-header__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   min-height: 52px;
   margin: 0;
   padding: 0;
@@ -17,6 +20,7 @@
   display: inline-block;
   vertical-align: top;
   height: 18px;
+  margin-left: 90px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -28,6 +32,10 @@
 .page-header__link {
   display: flex;
   color: $color-white;
+}
+
+.page-header__link-text  {
+  margin-left: 18px;
 }
 
 @media (max-width: $desktop-width) {

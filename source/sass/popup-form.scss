@@ -142,10 +142,15 @@
   background-position: 3px 4px, 0 2px;
 }
 
+.popup-form,
+.modal-layout {
+  display: none;
+}
 
 @media (max-width: $desktop-width) {
-  .popup-form {
-    background-image: none;
+  .popup-form,
+  .modal-layout {
+    display: none;
   }
 
   .popup-form__wrapper {

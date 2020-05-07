@@ -3,7 +3,9 @@
 }
 
 .page-header__button {
-  padding: 14px 26px 13px 26px;
+  min-width: 180px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   border: 1px solid $color-white;
   border-radius: 5px;
   font-style: normal;
