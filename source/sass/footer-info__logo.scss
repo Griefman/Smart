@@ -1,3 +1,14 @@
+.footer-info__logo {
+  width: 220px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.footer-info__logo-link {
+  width: 216px;
+  padding-top: 3px;
+}
+
 .footer-info__logo-name {
   color: #203c42;
 }
@@ -14,6 +25,10 @@
   color: #1b2d37;
 }
 
+
+.footer-info__logo-slogan {
+  letter-spacing: 0.07em;
+}
 @media (max-width: $desktop-width) {
   .footer-info__container {
     width: 100%;

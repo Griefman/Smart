@@ -2,27 +2,18 @@
   width: 100%;
   height: auto;
   padding-top: 65px;
-  padding-left: 19%;
-  padding-right: 19%;
+  padding-bottom: 55px;
 }
 
 .footer-info__wrapper {
-  width: 100%;
-  height: auto;
   display: flex;
-  flex-wrap: nowrap;
+  width: 74.5%;
+  margin: 0 auto;
+  box-sizing: border-box;
   }
 
 @media (max-width: $desktop-width) {
-  //.footer-info {
-  //  padding-left: 25px;
-  //  padding-right: 25px;
-  //}
-  //
-  //.footer-info__container {
-  //  flex-basis: 100%;
-  //  background-color:red;
-  //}
+
 }
 
 @media (max-width: $tablet-width) {

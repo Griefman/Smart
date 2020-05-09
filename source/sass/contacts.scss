@@ -3,10 +3,10 @@
   justify-content: end;
   width: 100%;
   height: auto;
-  padding-left: 19.5%;
-  padding-right: 19.5%;
-  padding-top: 96px;
-  padding-bottom: 113px;
+  //padding-left: 19.5%;
+  //padding-right: 19.5%;
+  padding-top: 90px;
+  padding-bottom: 111px;
   background-color: $color-lightblue;
 
   background-image: url("../img/footer-airplan.png"),
@@ -14,17 +14,25 @@
     url("../img/footer-polygon-01.png"),
     url("../img/footer-polygon-02.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 511px 288px, 1920px 800px, 234px 234px, 373px 373px;
-  //background-position: 10em 150px, -700px -150px, right 0, right 400px;
+  background-size: 511px 288px, 1920px 880px, 234px 234px, 373px 373px;
 
-  background-position: right 1100px top 200px, right 800px top -150px, right 0, right 400px;
+
+  background-position: right 1050px top 160px, right 847px top -180px, right 0, right 400px;
 }
 
 .contacts__wrapper {
-  display: flex;
+  width: 73.9%;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 6.1%;
+  padding-right: 6.2%;
+}
+
+.contacts__form {
   width: 570px;
   height: auto;
   margin-left: auto;
+  box-sizing: border-box;
 }
 
 .contacts__form-container {
@@ -37,7 +45,7 @@
 
 .contacts__form-title {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   padding: 0;
   font-style: normal;
   font-weight: normal;
@@ -67,7 +75,7 @@
   height: 50px;
   margin-bottom: 40px;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 15px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -100,11 +108,11 @@
 }
 
 .contacts__textarea {
-  width: 590px;
+  width: 570px;
   height: 154px;
   margin-bottom: 43px;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -118,7 +126,9 @@
 
 
 .contacts__form-button {
-  padding: 15px 70px 15px 70px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 270px;
   color: $color-white;
   border: 1px solid $color-white;
 }
@@ -142,7 +152,7 @@
   background-image: url("../img/checkbox-rec.png");
   background-repeat: no-repeat;
   background-size: 16px 16px;
-  background-position: 0 2px;
+  background-position: 6px 8px;
   cursor: pointer;
 }
 
@@ -151,7 +161,7 @@
     url("../img/checkbox-rec.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 10px 10px, 16px 16px;
-  background-position: 3px 4px, 0 2px;
+  background-position: 9px 10px, 6px 8px;
 }
 
 

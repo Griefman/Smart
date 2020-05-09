@@ -62,8 +62,8 @@ body {
     url("../img/body-bg-desktop.png"),
     url("../img/body-bg-rect-desktop.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 705px 515px, 1920px 881px, 1920px 881px, 100% 881px;
-  background-position: 1040px 257px, 0 0, 0 0, 0 0;
+  background-size: 705px 515px, 1920px 881px, 100% 881px, 100% 881px;
+  background-position: 1030px 257px, -10px 0, 0 0, 0 0;
   box-sizing: border-box;
 }
 
@@ -96,6 +96,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: bottom;
 }
 
 a {
@@ -113,7 +114,7 @@ a {
 }
 
 .logo {
-  width: 220px;
+  width: 210px;
   min-height: 52px;
 }
 

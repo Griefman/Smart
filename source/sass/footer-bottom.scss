@@ -1,17 +1,17 @@
 .footer-bottom {
   width: 100%;
   height: auto;
-  padding-left: 19%;
-  padding-right: 19%;
+
   border-top: 1px solid rgba(98, 105, 98, 0.2);
 }
 
 .footer-bottom__wrapper {
-  width: 100%;
-  height: auto;
   display: flex;
-  justify-content: space-between;
+  width: 74.3%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
 
 .footer-bottom__item {
   font-family: "PT Mono", "Arial", sans-serif;
@@ -22,6 +22,19 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #1b2d37;
+}
+
+
+.footer-bottom__item:nth-child(1) {
+  margin-right: 5%;
+}
+
+.footer-bottom__item:nth-child(2) {
+  margin-right: 10.1%;
+}
+
+.footer-bottom__item:nth-last-child(1) {
+  margin-left: auto;
 }
 
 @media (max-width: $desktop-width) {

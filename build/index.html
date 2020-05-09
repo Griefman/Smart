@@ -80,10 +80,11 @@
             </button>
             <button class="button intro__button-order button--short" type="button">Бесплатная консультация</button>
           </div>
+          <div class="intro-scroll">
+            <a href="#" class="intro-scroll__btn" type="button">Скролл вниз</a>
+          </div>
         </div>
-      </div>
-      <div class="intro-scroll">
-        <a href="#" class="intro-scroll__btn" type="button">Скролл вниз</a>
+
       </div>
     </div>
     <section class="features">
@@ -224,7 +225,7 @@
                 <img class="services__image-small" width="290" height="256" src="img/main-slide3-mobile.jpg" alt="Комплектующие" srcset="img/main-slide3@2x-mobile.jpg">
               </div>
               <div class="services__item-button">
-                <img src="img/icon-arrowR-tablet.svg" class="services__arrow-right">
+                <img src="img/icon-arrowR-tablet.svg" class="services__arrow-right" width="6" height="9">
               </div>
             </div>
           </a>
@@ -241,7 +242,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <form action="/" method="POST">
+        <form class="contacts__form" action="/" method="POST">
           <p class="contacts__form-title">Остались вопросы? Задайте их нам!</p>
           <p class="contacts__form-text">Мы проконсультируем Вас бесплатно </p>
 
@@ -260,7 +261,7 @@
               <label for="question" class="visually-hidden"></label>
               <textarea class="contacts__textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
             </div>
-            <button class="button contacts__form-button" type="submit">Отправить</button>
+            <button class="button contacts__form-button" type="submit">Задать вопрос</button>
 
 
             <div class="contacts__form-checkbox">
@@ -277,8 +278,8 @@
       <h2 class="visually-hidden">Информация</h2>
       <div class="footer-info__wrapper">
         <div class="footer-info__container">
-          <div class="footer-info__logo logo">
-            <a class="footer-info__logo-link logo__link">
+          <div class="logo footer-info__logo">
+            <a class="logo__link footer-info__logo-link">
               <p class="footer-info__logo-image  logo__image">
                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M32.0668 13.8665C33.1952 13.8665 34.1485 14.5936 34.5073 15.5998H43.4929C43.8517 14.5936 44.805 13.8665 45.9334 13.8665C47.3669 13.8665 48.5334 15.033 48.5334 16.4664C48.5334 17.8999 47.3669 19.0664 45.9334 19.0664C44.805 19.0664 43.8517 18.3392 43.4929 17.3331H34.5064C34.1476 18.3392 33.1943 19.0664 32.0659 19.0664C30.6324 19.0664 29.4659 17.8999 29.4659 16.4664C29.4659 15.033 30.6333 13.8665 32.0668 13.8665ZM45.9334 17.3331C46.411 17.3331 46.8001 16.9448 46.8001 16.4664C46.8001 15.988 46.411 15.5998 45.9334 15.5998C45.4559 15.5998 45.0668 15.988 45.0668 16.4664C45.0668 16.9448 45.4559 17.3331 45.9334 17.3331ZM32.0668 17.3331C32.5443 17.3331 32.9334 16.9448 32.9334 16.4664C32.9334 15.988 32.5443 15.5998 32.0668 15.5998C31.5892 15.5998 31.2001 15.988 31.2001 16.4664C31.2001 16.9448 31.5892 17.3331 32.0668 17.3331Z" fill="#00B2FF"></path>
@@ -293,7 +294,7 @@
 
               </p>
               <p class="footer-info__logo-text logo__text">
-                <span class="footer-info__logo-name logo__name">Smart Device</span>
+                <span class="logo__name footer-info__logo-name">Service Device</span>
                 <span class="footer-info__logo-slogan logo__slogan">умные технологии</span>
               </p>
             </a>
