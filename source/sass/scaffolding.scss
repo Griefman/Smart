@@ -160,6 +160,7 @@ a {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 50;
 }
+
 @media (max-width: $desktop-width) {
   body {
     background-image: url("../img/header-image-tablet.png"),
@@ -167,11 +168,10 @@ a {
       url("../img/body-bg-tablet.png"),
       url("../img/body-bg-rect-tablet.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 260px 340px, 770px 563px, 100% 692px, 100% 692px;
-    background-position: 100% 255px, 100% 135px, 0 0, 0 0;
+    background-size: 260px 340px, 770px 563px, 100% 687px, 100% 687px;
+    background-position: 100% 115px, right 0 top 0, 0 0, 0 0;
   }
 }
-
 
 @media (max-width: $tablet-width) {
   body {

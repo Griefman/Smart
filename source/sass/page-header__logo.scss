@@ -1,5 +1,19 @@
 @media (max-width: $desktop-width) {
   .page-header__logo-text {
-    display: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 6px;
+    padding-left: 6px;
+    line-height: 20px;
+    //letter-spacing: 0.04em;
   }
+}
+
+.page-header__logo-name {
+  padding: 0;
+  margin: 0;
+}
+
+.page-header__logo-slogan {
+  letter-spacing: 0.05em;
 }

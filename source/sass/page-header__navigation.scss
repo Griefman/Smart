@@ -34,7 +34,7 @@
   color: $color-white;
 }
 
-.page-header__link-text  {
+.page-header__link-text {
   margin-left: 18px;
 }
 
@@ -44,7 +44,34 @@
   }
 
   .page-header__navigation {
-    min-width: 70px;
-    min-height: 52px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .page-header__list {
+    padding-top: 12px;
+  }
+
+  .page-header__item {
+    width: auto;
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .page-header__item:last-child {
+    margin-right: 0;
+  }
+
+  .page-header__icon-phone {
+    width: 23px;
+    height: 23px;
+  }
+
+  .page-header__icon-mail {
+    width: 25px;
+    height: 19px;
   }
 }

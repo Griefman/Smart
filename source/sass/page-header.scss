@@ -10,12 +10,13 @@
 
 @media (max-width: $desktop-width) {
   .page-header__container {
+    width: 100%;
+    min-width: 768px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 30px;
-    width: 100%;
-    max-width: 1023px;
-    margin: 0 auto;
+    padding-top: 20px;
+
+    //margin: 0 auto;
   }
 }
 
@@ -23,7 +24,7 @@
   .page-header__container {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
     max-width: 767px;
   }
 }
