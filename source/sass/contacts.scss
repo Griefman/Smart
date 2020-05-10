@@ -3,8 +3,6 @@
   justify-content: end;
   width: 100%;
   height: auto;
-  //padding-left: 19.5%;
-  //padding-right: 19.5%;
   padding-top: 90px;
   padding-bottom: 111px;
   background-color: $color-lightblue;
@@ -167,18 +165,60 @@
 
 @media (max-width: $desktop-width) {
   .contacts {
+    width: 100%;
+    min-width: 768px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 80px;
+    padding-bottom: 106px;
     background-image: none;
   }
 
   .contacts__wrapper {
     width: 590px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .contacts__textarea {
+  .contacts__form {
     width: 590px;
+    padding-left: 5px;
+  }
+
+  .contacts__form-title {
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 140.62%;
   }
 
   .contacts__input {
     width: 280px;
+  }
+
+  .contacts__textarea {
+    width: 590px;
+    margin-bottom: 48px;
+  }
+
+  .contacts__form-button {
+    width: 280px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+
+  .contacts__form-checkbox {
+    width: 273px;
+    height: auto;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .contacts__checkbox-label {
+    padding-top: 10px;
   }
 }

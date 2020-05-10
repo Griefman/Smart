@@ -16,3 +16,10 @@
   height: 28px;
   border-radius: 50%;
 }
+
+@media (max-width: $desktop-width) {
+  .footer-info__social {
+    margin-left: auto;
+    padding-top: 10px;
+  }
+}

@@ -48,6 +48,10 @@
   color: #666666;
 }
 
+.company__text--short {
+  display: none;
+}
+
 .company__text--margin {
   margin-bottom: 40px;
 }
@@ -80,16 +84,53 @@
 
 @media (max-width: $desktop-width) {
   .company {
-    padding-left: 25px;
+    width: 100px;
+    min-width: 768px;
+    padding-left: 30px;
     padding-right: 25px;
+    padding-bottom: 32px;
   }
 
   .company__wrapper {
-    padding-left: 200px;
-    padding-bottom: 83px;
+    width: 100%;
+    padding-top: 23px;
+    padding-left: 180px;
+    padding-right: 0;
+    padding-bottom: 50px;
     background-image: url("../img/main-2005-desktop.png");
     background-size: 244px 362px;
-    background-position: 0 0;
+    background-position: -35px 25px;
+  }
+
+  .company__title {
+    font-size: 32px;
+  }
+
+  .company__text {
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    font-family: "PT Mono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #666666;
+  }
+
+  .company__text--short {
+    display: block;
+  }
+
+  .company__text--long {
+    display: none;
+  }
+
+  .company__content-wrapper {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 0;
+    padding-bottom: 25px;
   }
 }
 
@@ -105,4 +146,5 @@
     background-image: none;
     padding-bottom: 65px;
   }
+
 }

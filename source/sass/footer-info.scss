@@ -3,6 +3,7 @@
   height: auto;
   padding-top: 65px;
   padding-bottom: 55px;
+  box-sizing: border-box;
 }
 
 .footer-info__wrapper {
@@ -12,9 +13,22 @@
   box-sizing: border-box;
 }
 
-//@media (max-width: $desktop-width) {
-//
-//}
+@media (max-width: $desktop-width) {
+  .footer-info {
+    width: 100%;
+    min-width: 768px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 38px;
+  }
+
+  .footer-info__wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
 //
 //@media (max-width: $tablet-width) {
 //

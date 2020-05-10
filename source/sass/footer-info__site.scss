@@ -29,6 +29,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   color: #1b2d37;
+  opacity: 0.5;
 }
 
 .footer-info__site-columns {
@@ -48,12 +49,14 @@
 
 @media (max-width: $desktop-width) {
   .footer-info__site {
-    width: 100%;
+    width: 50%;
+    margin-left: 0;
+    padding-top: 40px;
   }
 
-  .footer-info__site-columns {
-    column-width: 767px;
-  }
+  //.footer-info__site-columns {
+  //  column-width: 767px;
+  //}
 }
 
 //@media (max-width: $tablet-width) {

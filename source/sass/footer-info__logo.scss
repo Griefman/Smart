@@ -23,6 +23,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #1b2d37;
+  opacity: 0.5;
 }
 
 
@@ -32,13 +33,28 @@
 
 @media (max-width: $desktop-width) {
   .footer-info__container {
+    display: flex;
     width: 100%;
+    min-width: 708px;
     height: auto;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+    padding-bottom: 20px;
+
+  }
+
+  .footer-info__logo {
+    width: 220px;
+    height: auto;
+    margin-bottom: 0;
   }
 
   .footer-info__item {
     display: block;
+    margin-left: 87px;
+    box-sizing: border-box;
   }
+
 }
 
 //@media (max-width: $tablet-width) {

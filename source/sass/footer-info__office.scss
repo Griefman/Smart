@@ -26,8 +26,23 @@
   font-size: 15px;
   line-height: 16px;
   color: #1b2d37;
+  opacity: 0.5;
 }
 
 .footer-info__office-address {
   padding-right: 0;
 }
+
+@media (max-width: $desktop-width) {
+  .footer-info__office {
+    display: inline-block;
+    width: 50%;
+    margin-left: 0;
+    padding-top: 40px;
+    padding-left: 15px;
+  }
+}
+
+//@media (max-width: $tablet-width) {
+//
+//}
