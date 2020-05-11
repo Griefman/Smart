@@ -1,6 +1,4 @@
 .contacts {
-  //display: flex;
-  //justify-content: end;
   width: 100%;
   height: auto;
   padding-top: 90px;
@@ -14,7 +12,7 @@
     url("../img/footer-polygon-02.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 511px 288px, 1920px 880px, 234px 234px, 373px 373px;
-  background-position: right 1050px top 160px, right 847px top -180px, right 0, right 400px;
+  background-position: right 1050px top 160px, right 847px top -180px, right 20px top 45px, right -40px top 270px;
 }
 
 .contacts__wrapper {

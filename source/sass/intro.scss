@@ -48,6 +48,8 @@
 }
 
 .intro__button-order {
+  display: inline-block;
+  vertical-align: top;
   margin-left: 95px;
   margin-bottom: 130px;
   padding: 17px 45px 17px 45px;
@@ -73,6 +75,8 @@
 }
 
 .intro-scroll__btn {
+  display: inline-block;
+  vertical-align: top;
   transform: rotate(-90deg);
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
