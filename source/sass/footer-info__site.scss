@@ -30,12 +30,6 @@
 
 .footer-info__site-item {
   margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-.footer-info__site-item {
-  margin: 0;
   margin-bottom: 9px;
   padding: 0;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -46,6 +40,7 @@
   letter-spacing: 0.05em;
   color: #1b2d37;
   opacity: 0.5;
+  text-decoration: none;
 }
 
 .footer-info__site-columns {
