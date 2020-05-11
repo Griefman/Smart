@@ -11,9 +11,9 @@
 <div class="main-background">
   <header class="page-header">
     <div class="page-header__container">
-      <div class="page-header__logo logo">
-        <a class="page-header__logo-link logo__link">
-          <p class="page-header__logo-image  logo__image">
+      <div class="logo page-header__logo">
+        <a class="logo__link page-header__logo-link">
+          <p class=" logo__image page-header__logo-image">
             <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M32.0668 13.8665C33.1952 13.8665 34.1485 14.5936 34.5073 15.5998H43.4929C43.8517 14.5936 44.805 13.8665 45.9334 13.8665C47.3669 13.8665 48.5334 15.033 48.5334 16.4664C48.5334 17.8999 47.3669 19.0664 45.9334 19.0664C44.805 19.0664 43.8517 18.3392 43.4929 17.3331H34.5064C34.1476 18.3392 33.1943 19.0664 32.0659 19.0664C30.6324 19.0664 29.4659 17.8999 29.4659 16.4664C29.4659 15.033 30.6333 13.8665 32.0668 13.8665ZM45.9334 17.3331C46.411 17.3331 46.8001 16.9448 46.8001 16.4664C46.8001 15.988 46.411 15.5998 45.9334 15.5998C45.4559 15.5998 45.0668 15.988 45.0668 16.4664C45.0668 16.9448 45.4559 17.3331 45.9334 17.3331ZM32.0668 17.3331C32.5443 17.3331 32.9334 16.9448 32.9334 16.4664C32.9334 15.988 32.5443 15.5998 32.0668 15.5998C31.5892 15.5998 31.2001 15.988 31.2001 16.4664C31.2001 16.9448 31.5892 17.3331 32.0668 17.3331Z" fill="#00B2FF"></path>
               <path d="M25.1333 19.2259V13.8665C25.1333 13.636 25.2243 13.4158 25.3872 13.2538L28.8539 9.78716C29.0159 9.62423 29.2369 9.53323 29.4666 9.53323H32.2261C32.5849 8.52705 33.5382 7.79993 34.6666 7.79993C36.1001 7.79993 37.2666 8.96644 37.2666 10.3999C37.2666 11.8333 36.1001 12.9998 34.6666 12.9998C33.5382 12.9998 32.5849 12.2727 32.2261 11.2665H29.8254L26.8666 14.2253V19.2259C27.8728 19.5847 28.5999 20.538 28.5999 21.6664C28.5999 23.0998 27.4334 24.2663 25.9999 24.2663C24.5665 24.2663 23.3999 23.0998 23.3999 21.6664C23.3999 20.538 24.1271 19.5847 25.1333 19.2259ZM34.6666 11.2665C35.1441 11.2665 35.5333 10.8783 35.5333 10.3999C35.5333 9.92149 35.1441 9.53323 34.6666 9.53323C34.1891 9.53323 33.7999 9.92149 33.7999 10.3999C33.7999 10.8783 34.1891 11.2665 34.6666 11.2665ZM25.9999 22.533C26.4775 22.533 26.8666 22.1448 26.8666 21.6664C26.8666 21.188 26.4775 20.7997 25.9999 20.7997C25.5224 20.7997 25.1333 21.188 25.1333 21.6664C25.1333 22.1448 25.5224 22.533 25.9999 22.533Z" fill="#00B2FF"></path>
@@ -101,7 +101,7 @@
           </div>
           <div class="features__text">
             <h2 class="features__item-title">Оперативные сроки</h2>
-            <p class="features__item-text">Усовершенствованная логистическая система позволяет нам просчитывать
+            <p class="features__item-text">Усовершенствованная логистическая система позволяет нам <br class="features__item-break"> просчитывать
               стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </div>
         </div>
@@ -156,7 +156,7 @@
           </div>
           <div class="features__text">
             <h2 class="features__item-title">Персонализация стоимости</h2>
-            <p class="features__item-text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы
+            <p class="features__item-text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы<br class="features__item-break">
               установить ту цену, которая Вас устраивает.</p>
           </div>
         </div>
@@ -298,7 +298,7 @@
                 </svg>
 
               </p>
-              <p class="footer-info__logo-text logo__text">
+              <p class="logo__text footer-info__logo-text">
                 <span class="logo__name footer-info__logo-name">Service Device</span>
                 <span class="footer-info__logo-slogan logo__slogan">умные технологии</span>
               </p>
@@ -333,7 +333,11 @@
         </div>
 
         <div class="footer-info__site">
-          <h3 class="footer-info__site-title">Разделы сайта</h3>
+          <div class="footer-info__site-header">
+            <h3 class="footer-info__site-title">Разделы сайта</h3>
+            <button class="footer-info__site-toggle toggle-plus"></button>
+          </div>
+
           <div class="footer-info__site-columns">
             <p class="footer-info__site-item">О компании</p>
             <p class="footer-info__site-item">Продукты </p>
@@ -346,7 +350,10 @@
         </div>
 
         <div class="footer-info__office">
-          <h3 class="footer-info__office-title">Наш офис</h3>
+          <div class="footer-info__office-header">
+            <h3 class="footer-info__office-title">наш офис</h3>
+            <button class="footer-info__office-toggle toggle-minus"></button>
+          </div>
           <p class="footer-info__office-address">г. Мытищи, Олимпийский проспект, д.10</p>
           <p class="footer-info__office-tel">+7 (495) 589-40-50</p>
           <p class="footer-info__office-tel">+7 (925) 003-87-67</p>
@@ -365,6 +372,7 @@
     </div>
 
   </footer>
+
 </div>
 <div class="popup-form">
   <form action="/" method="POST">

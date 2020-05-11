@@ -22,9 +22,10 @@
 
 @media (max-width: $tablet-width) {
   .page-header__container {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
+    min-width: 320px;
     max-width: 767px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
   }
 }

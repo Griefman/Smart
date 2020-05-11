@@ -29,7 +29,23 @@
     flex-wrap: wrap;
   }
 }
-//
-//@media (max-width: $tablet-width) {
-//
-//}
+
+@media (max-width: $tablet-width) {
+  .footer-info {
+    width: 100%;
+    min-width: 320px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 40px;
+    padding-bottom: 21px;
+  }
+
+  .footer-info__wrapper {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+

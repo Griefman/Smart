@@ -55,6 +55,15 @@
   }
 }
 
-//@media (max-width: $tablet-width) {
-//
-//}
+@media (max-width: $tablet-width) {
+  .footer-bottom__wrapper {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  .footer-bottom__item {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

@@ -18,6 +18,17 @@
   color: #1b2d37;
 }
 
+.footer-info__site-toggle {
+  display: none;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
 .footer-info__site-item {
   margin: 0;
   margin-bottom: 9px;
@@ -53,12 +64,34 @@
     margin-left: 0;
     padding-top: 40px;
   }
-
-  //.footer-info__site-columns {
-  //  column-width: 767px;
-  //}
 }
 
-//@media (max-width: $tablet-width) {
-//
-//}
+@media (max-width: $tablet-width) {
+  .footer-info__site {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
+  }
+
+  .footer-info__site-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-info__site-title {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+
+  .footer-info__site-toggle {
+    display: block;
+  }
+
+
+  .footer-info__site-columns {
+    display: none;
+  }
+}

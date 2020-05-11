@@ -75,3 +75,9 @@
     height: 19px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .page-header__list {
+    padding-top: 6px;
+  }
+}

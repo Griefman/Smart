@@ -86,7 +86,7 @@
 
 @media (max-width: $desktop-width) {
   .intro {
-    width: 100px;
+    width: 100%;
     min-width: 768px;
     padding-left: 30px;
     padding-right: 30px;
@@ -141,10 +141,25 @@
 }
 
 @media (max-width: $tablet-width) {
+  .intro {
+    width: 100%;
+    min-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .intro__wrapper {
+    width: 100%;
+    padding-top: 218px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 70px;
+  }
+
   .intro__title {
     width: 277px;
     height: auto;
-
+    margin-bottom: 30px;
     font-size: 40px;
     line-height: 47px;
   }
@@ -152,10 +167,12 @@
   .intro__message {
     width: 100%;
     height: auto;
+    margin-bottom: 40px;
     font-size: 16px;
   }
 
   .intro__button-order {
+    width: 100%;
     margin: 0 auto;
   }
 

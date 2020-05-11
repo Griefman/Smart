@@ -23,3 +23,9 @@
     padding-top: 10px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .footer-info__social {
+    margin: 0 auto;
+  }
+}

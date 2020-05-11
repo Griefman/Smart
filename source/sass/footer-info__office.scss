@@ -16,6 +16,16 @@
   color: #1b2d37;
 }
 
+.footer-info__office-toggle {
+  display: none;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .footer-info__office-tel,
 .footer-info__office-address {
   font-family: "PT Mono", "Arial", sans-serif;
@@ -43,6 +53,34 @@
   }
 }
 
-//@media (max-width: $tablet-width) {
-//
-//}
+@media (max-width: $tablet-width) {
+  .footer-info__office {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
+  }
+
+  .footer-info__office-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-info__office-title {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+  }
+
+  .footer-info__office-toggle {
+    display: block;
+  }
+
+  .footer-info__office-address {
+    width: 200px;
+    margin-bottom: 6px;
+    padding-top: 8px;
+    line-height: 25px;
+  }
+}
