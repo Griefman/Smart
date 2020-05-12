@@ -446,7 +446,7 @@
   </footer>
 
 </div>
-<div class="popup-form">
+<div class="popup-form display-hidden">
   <p class="popup-form__button-wrapper">
     <button type="button" class="popup-form__button-close" aria-label="Закрыть">
       <span class="visually-hidden">Закрыть</span>
@@ -461,7 +461,7 @@
       <p class="popup-form__form-text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время </p>
       <div class="popup-form__form-field ">
         <label for="popup-name" class="visually-hidden"></label>
-        <input class="popup-form__input" id="popup-name" type="text" name="name" placeholder="Имя">
+        <input class="popup-form__input" id="popup-name" type="text" name="name" placeholder="Имя" autofocus>
       </div>
 
       <div class="popup-form__form-field form-field">
@@ -484,6 +484,7 @@
     </div>
   </form>
 </div>
-<div class="modal-layout"></div>
+<div class="modal-layout display-hidden"></div>
+<script src="js/script.js"></script>
 </body>
 </html>
