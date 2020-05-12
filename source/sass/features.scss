@@ -32,6 +32,7 @@
 .features__item:hover {
   border: none;
   background-color: $color-lightblue;
+  cursor: pointer;
 }
 
 .features__item:hover .features__icon-watch path {
