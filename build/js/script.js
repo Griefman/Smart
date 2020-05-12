@@ -4,6 +4,7 @@ var popUp = document.querySelector('.popup-form');
 var overlay = document.querySelector('.modal-layout');
 var buttonOpenPopUp = document.querySelector('.page-header__button');
 var buttonClosePopUp = document.querySelector('.popup-form__button-close');
+var inputName = document.querySelector("#popup-name")
 
 
 /**
@@ -15,6 +16,7 @@ buttonOpenPopUp.addEventListener('click', function () {
   if (popUp.classList.contains('display-hidden')) {
     popUp.classList.remove('display-hidden');
     overlay.classList.remove('display-hidden');
+    inputName.focus();
   }
 });
 
