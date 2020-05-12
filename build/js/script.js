@@ -8,24 +8,18 @@ var toggleSite = document.querySelector('.footer-info__site-toggle');
 var siteColumns = document.querySelector('.footer-info__site-columns');
 var toggleOffice = document.querySelector('.footer-info__office-toggle');
 var officeColumns = document.querySelector('.footer-info__office-columns');
+var inputName = document.querySelector("#popup-name")
 
-
-/**
- * Открывает  попап.
- * @param {event} evt - Событие клика
- */
 
 buttonOpenPopUp.addEventListener('click', function () {
   if (popUp.classList.contains('display-hidden')) {
     popUp.classList.remove('display-hidden');
     layuot.classList.remove('display-hidden');
+    inputName.focus();
   }
 });
 
 
-/**
- * Закрывает  попап.
- */
 
 var closePopUp = function () {
   if (!popUp.classList.contains('display-hidden')) {
@@ -37,6 +31,18 @@ var closePopUp = function () {
 buttonClosePopUp.addEventListener('click', function () {
   closePopUp();
 });
+
+
+overlay.addEventListener('click', function () {
+  closePopUp();
+});
+
+document.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === KEY_ESC_CODE) {
+    closePopUp();
+  }
+});
+
 
 
 toggleSite.addEventListener('click', function () {
@@ -82,4 +88,20 @@ if (window.localStorage) {
       };
     })(elements[i]);
   }
+}
+
+
+var anchors = document.querySelectorAll('a[href*="#features"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href').substr(1)
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
 }
