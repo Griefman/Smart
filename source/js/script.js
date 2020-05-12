@@ -1,7 +1,7 @@
 'use strict';
 var KEY_ESC_CODE = 27;
 var popUp = document.querySelector('.popup-form');
-var layuot = document.querySelector('.modal-layout');
+var layout = document.querySelector('.modal-layout');
 var buttonOpenPopUp = document.querySelector('.page-header__button');
 var buttonClosePopUp = document.querySelector('.popup-form__button-close');
 var toggleSite = document.querySelector('.footer-info__site-toggle');
@@ -14,7 +14,7 @@ var inputName = document.querySelector("#popup-name")
 buttonOpenPopUp.addEventListener('click', function () {
   if (popUp.classList.contains('display-hidden')) {
     popUp.classList.remove('display-hidden');
-    layuot.classList.remove('display-hidden');
+    layout.classList.remove('display-hidden');
     inputName.focus();
   }
 });
@@ -24,7 +24,7 @@ buttonOpenPopUp.addEventListener('click', function () {
 var closePopUp = function () {
   if (!popUp.classList.contains('display-hidden')) {
     popUp.classList.add('display-hidden');
-    layuot.classList.add('display-hidden');
+    layout.classList.add('display-hidden');
   }
 }
 
@@ -33,7 +33,7 @@ buttonClosePopUp.addEventListener('click', function () {
 });
 
 
-overlay.addEventListener('click', function () {
+layout.addEventListener('click', function () {
   closePopUp();
 });
 
