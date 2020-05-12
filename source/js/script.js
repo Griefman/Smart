@@ -67,17 +67,19 @@ toggleOffice.addEventListener('click', function () {
     }
   }
 });
-// var pageHeader = document.querySelector('.page-header');
-// var headerToggle = document.querySelector('.page-header__toggle');
-//
-// pageHeader.classList.remove('page-header--nojs');
-//
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
+
+if (window.localStorage) {
+  var elements = document.querySelectorAll('[name]');
+
+  for (var i = 0, length = elements.length; i < length; i++) {
+    (function(element) {
+      var name = element.getAttribute('name');
+
+      element.value = localStorage.getItem(name) || '';
+
+      element.onkeyup = function() {
+        localStorage.setItem(name, element.value);
+      };
+    })(elements[i]);
+  }
+}
