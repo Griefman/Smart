@@ -159,12 +159,6 @@
 }
 
 .contacts__checkbox-input:not(:checked) ~ .contacts__checkbox-label[for="agreement"] {
-  //background-image: url("../img/checkbox-tic.png"),
-  //  url("../img/checkbox-rec.svg");
-  //background-repeat: no-repeat, no-repeat;
-  //background-size: 10px 10px, 16px 16px;
-  //background-position: 9px 10px, 6px 8px;
-
   background-image: url("../img/checkbox-rec.png");
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -309,6 +303,8 @@
 
 
   .contacts__checkbox-input:checked ~ .contacts__checkbox-label[for="agreement"] {
-    background-position: 9px 10px, 0 8px;
+    background-position: 4px 10px, 0 8px;
   }
+
+
 }

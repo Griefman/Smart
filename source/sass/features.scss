@@ -29,6 +29,7 @@
   box-sizing: border-box;
 }
 
+
 .features__item:hover {
   border: none;
   background-color: $color-lightblue;
@@ -42,6 +43,8 @@
 .features__icon {
   margin-bottom: 14px;
 }
+
+
 
 .features__item:hover .features__icon path {
   fill: $color-white;
@@ -148,12 +151,25 @@
     box-sizing: border-box;
   }
 
+    .features__item-partners {
+    padding-top: 20px;
+  }
+
+  .features__item-partners .features__icon {
+    margin-bottom: 10px;
+  }
+
   .features__item-title {
     width: 240px;
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 140.62%;
   }
+
+  .features__item-detective .features__item-title {
+    margin-bottom: -10px;
+  }
+
 
   .features__item-text {
     padding-right: 12px;

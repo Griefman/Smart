@@ -10,6 +10,7 @@
 }
 
 .footer-info__logo-name {
+  padding-top: 8px;
   color: #203c42;
 }
 
@@ -80,15 +81,10 @@
 
   .footer-info__logo-link {
     width: 220px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   .footer-info__logo-name {
-    width: auto;
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 10px;
-    padding-left: 0;
-    line-height: 25px;
+    padding-top: 12px;
   }
 }
