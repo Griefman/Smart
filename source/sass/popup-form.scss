@@ -172,43 +172,9 @@
   margin-left: auto;
 }
 
-//.popup-form,
-//.modal-layout {
-//  display: none;
-//}
-
 @media (max-width: $desktop-width) {
   .popup-form,
   .modal-layout {
     display: none;
   }
 }
-//  .popup-form__wrapper {
-//    width: 590px;
-//  }
-//
-//  .popup-form__textarea {
-//    width: 590px;
-//  }
-//
-//  .popup-form__input {
-//    width: 280px;
-//  }
-//}
-//
-//.popup-form__button-wrapper {
-//  width: 20px;
-//  height: 20px;
-//  margin: 0;
-//  padding: 0;
-//  margin-left: auto;
-//}
-//
-//.popup-form__button-close {
-//  padding: 0;
-//  width: 20px;
-//  height: 20px;
-//  background-color: transparent;
-//  border: none;
-//  cursor: pointer;
-//}
