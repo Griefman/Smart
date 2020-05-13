@@ -139,7 +139,7 @@
   padding-left: 40px;
   padding-right: 20px;
   background-image: url("../img/checkbox-tic.png"),
-  url("../img/checkbox-rec.svg");
+    url("../img/checkbox-rec.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 10px 10px, 16px 16px;
   background-position: 3px 4px, 0 2px;
@@ -148,7 +148,7 @@
 
 .popup-form__checkbox-input:checked ~ .popup-form__checkbox-label[for="popup-agreement"] {
   background-image: url("../img/checkbox-tic.png"),
-  url("../img/checkbox-rec.svg");
+    url("../img/checkbox-rec.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 10px 10px, 16px 16px;
   background-position: 3px 4px, 0 2px;

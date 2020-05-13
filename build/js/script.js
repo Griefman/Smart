@@ -8,7 +8,7 @@ var toggleSite = document.querySelector('.footer-info__site-toggle');
 var siteColumns = document.querySelector('.footer-info__site-columns');
 var toggleOffice = document.querySelector('.footer-info__office-toggle');
 var officeColumns = document.querySelector('.footer-info__office-columns');
-var inputName = document.querySelector("#popup-name")
+var inputName = document.querySelector('#popup-name');
 
 
 buttonOpenPopUp.addEventListener('click', function () {
@@ -19,14 +19,12 @@ buttonOpenPopUp.addEventListener('click', function () {
   }
 });
 
-
-
 var closePopUp = function () {
   if (!popUp.classList.contains('display-hidden')) {
     popUp.classList.add('display-hidden');
     layout.classList.add('display-hidden');
   }
-}
+};
 
 buttonClosePopUp.addEventListener('click', function () {
   closePopUp();
@@ -42,8 +40,6 @@ document.addEventListener('keydown', function (evt) {
     closePopUp();
   }
 });
-
-
 
 toggleSite.addEventListener('click', function () {
   if (toggleSite.classList.contains('toggle-plus')) {
@@ -78,12 +74,12 @@ if (window.localStorage) {
   var elements = document.querySelectorAll('[name]');
 
   for (var i = 0, length = elements.length; i < length; i++) {
-    (function(element) {
+    (function (element) {
       var name = element.getAttribute('name');
 
       element.value = localStorage.getItem(name) || '';
 
-      element.onkeyup = function() {
+      element.onkeyup = function () {
         localStorage.setItem(name, element.value);
       };
     })(elements[i]);
@@ -91,51 +87,51 @@ if (window.localStorage) {
 }
 
 
-var anchors = document.querySelectorAll('a[href*="#features"]')
+var anchors = document.querySelectorAll('a[href*="#"]')
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+anchors.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    e.preventDefault();
 
-    const blockID = anchor.getAttribute('href').substr(1)
+    var blockID = item.getAttribute('href').substr(1);
 
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     })
   })
-}
-
+});
 
 window.addEventListener('DOMContentLoaded', function () {
-  function setCursorPosition (pos, elem) {
-    elem.focus()
-    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos)
+  function setCursorPosition(pos, elem) {
+    elem.focus();
+    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
     else if (elem.createTextRange) {
-      let range = elem.createTextRange()
-      range.collapse(true)
-      range.moveEnd('character', pos)
-      range.select()
+      var range = elem.createTextRange();
+      range.collapse(true);
+      range.moveEnd('character', pos);
+      range.select();
     }
   }
 
   function mask (event) {
-    let matrix = '+7 (___) ___ ____',
+    var matrix = '+7 (___) ___ ____',
       i = 0,
       def = matrix.replace(/\D/g, ''),
-      val = this.value.replace(/\D/g, '')
-    if (def.length >= val.length) val = def
+      val = this.value.replace(/\D/g, '');
+    if (def.length >= val.length) val = def;
     this.value = matrix.replace(/./g, function (a) {
-      return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a
-    })
+      return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
+    });
     if (event.type === 'blur') {
-      if (this.value.length === 2) this.value = ''
-    } else setCursorPosition(this.value.length, this)
+      if (this.value.length === 2) this.value = '';
+    } else setCursorPosition(this.value.length, this);
   }
-  const inputs = document.querySelectorAll('[name="phone-number"]')
-  for (let input of inputs) {
-    input.addEventListener('input', mask, false)
-    input.addEventListener('focus', mask, false)
-    input.addEventListener('blur', mask, false)
-  }
-})
+  var inputs = document.querySelectorAll('[name="phone-number"]');
+
+  inputs.forEach(function (item) {
+    item.addEventListener('input', mask, false);
+    item.addEventListener('focus', mask, false);
+    item.addEventListener('blur', mask, false);
+  });
+});
