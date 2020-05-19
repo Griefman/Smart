@@ -39,15 +39,13 @@ html {
   box-sizing: border-box;
 }
 
-.content-box-component {
-  box-sizing: content-box;
-}
+
 
 body {
   position: relative;
   width: 100%;
   height: auto;
-  overflow: auto;
+
   margin: 0;
   padding: 0;
   color: $color-white;
@@ -75,6 +73,8 @@ body {
       url("../img/body-bg-rect-desktop.png");
   }
 }
+
+
 
 .visually-hidden {
   position: absolute;
@@ -171,18 +171,19 @@ a {
     background-size: 260px 340px, 770px 563px, 100% 687px, 100% 687px;
     background-position: 100% 115px, right 0 top 0, 0 0, 0 0;
   }
-  background-color: red;
 }
 
 @media (max-width: $tablet-width) {
   body {
+    width: 100%;
+    min-width: 320px;
     background-image: url("../img/header-image-mobile.png"),
       url("../img/header-points-bg-mobile.png"),
       url("../img/body-bg-mobile.png"),
       url("../img/body-bg-rect-mobile.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 294px 220px, 100% 529px, 100% 647px, 100% 647px;
-    background-position: right 90px, 0% 0, 0 0, 0 0;
+    background-size: 294px 220px, 320px 529px, 100% 647px, 100% 647px;
+    background-position: right 90px, right 0, 0 0, 0 0;
   }
 
   .toggle-plus {

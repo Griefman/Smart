@@ -1,5 +1,5 @@
 .features {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   box-sizing: border-box;
 }
@@ -16,7 +16,7 @@
 }
 
 .features__item {
-  width: 50%;
+  width: 48%;
   max-width: 570px;
   min-height: 299px;
   border: 1px solid #ebebeb; //#ebebeb
@@ -89,10 +89,9 @@
   display: none;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: 1023px) {
   .features {
     width: 100%;
-    min-width: 768px;
   }
 
   .features__wrapper {
@@ -110,6 +109,7 @@
     border-left: 2px solid $color-lightblue;
     margin-bottom: 26px;
     box-sizing: border-box;
+    margin-right: 0px;
   }
 
   .features__icon {
@@ -128,7 +128,6 @@
 @media (max-width: $tablet-width) {
   .features {
     width: 100%;
-    min-width: 320px;
   }
 
   .features__wrapper {

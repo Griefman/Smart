@@ -1,27 +1,21 @@
 .page-main__wrapper {
   width: 100%;
+  height: auto;
   box-sizing: border-box;
 }
 
-@media (max-width: 1023px) {
-  .page-main__wrapper {
-    width: 100%;
-    max-width: 1023px;
-    margin: 0 auto;
-    margin-bottom: 200px;
-    box-sizing: border-box;
-  }
-}
-
-
 @media (max-width: $desktop-width) {
   .page-main__wrapper {
+    margin: 0 auto;
     margin-bottom: 100px;
+    box-sizing: border-box;
   }
 }
 
 @media (max-width: $tablet-width) {
   .page-main__wrapper {
+    min-width: 320px;
+    max-width: 767px;
     margin-bottom: 38px;
   }
 }

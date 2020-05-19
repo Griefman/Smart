@@ -118,6 +118,7 @@
   border: none;
   background: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
+  resize: none;
 }
 
 
@@ -164,7 +165,7 @@
 @media (max-width: $desktop-width) {
   .contacts {
     width: 100%;
-    min-width: 768px;
+    //min-width: 768px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 80px;

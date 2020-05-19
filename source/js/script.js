@@ -33,11 +33,13 @@ document.addEventListener('keydown', function (evt) {
     closePopUp();
   }
 });
+
 toggleSite.addEventListener('click', function () {
   if (toggleSite.classList.contains('toggle-plus')) {
     toggleSite.classList.remove('toggle-plus');
     toggleSite.classList.add('toggle-minus');
     siteColumns.style.display = 'block';
+
   } else {
     if (toggleSite.classList.contains('toggle-minus')) {
       toggleSite.classList.remove('toggle-minus');
@@ -46,6 +48,7 @@ toggleSite.addEventListener('click', function () {
     }
   }
 });
+
 toggleOffice.addEventListener('click', function () {
   if (toggleOffice.classList.contains('toggle-plus')) {
     toggleOffice.classList.remove('toggle-plus');
@@ -59,6 +62,21 @@ toggleOffice.addEventListener('click', function () {
     }
   }
 });
+
+
+// var buttonPluses = document.querySelectorAll('toggle-plus');
+// var columns = document.querySelectorAll('columns')
+//
+// buttonPluses.forEach(function (item, index) {
+//   item.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     item.classList.remove('toggle-plus');
+//     item.classList.add('toggle-minus');
+//     columns[index].style.display = 'block';
+//   });
+// });
+
+
 if (window.localStorage) {
   var elements = document.querySelectorAll('[name]');
   for (var i = 0; i < elements.length; i++) {
@@ -106,10 +124,6 @@ window.addEventListener('DOMContentLoaded', function () {
       val = def;
     }
     this.value = matrix.replace(/./g, function (a) {
-      // return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) :
-      //   i >= val.length ? '' :
-      //     a;
-
       if (/[_\d]/.test(a) && i < val.length) {
         return val.charAt(i++);
       } else {

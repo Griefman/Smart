@@ -84,15 +84,16 @@
 
 @media (max-width: $desktop-width) {
   .company {
-    width: 100px;
-    min-width: 768px;
+    //min-width: 768px;
+    //max-width: 1023px;
     padding-left: 30px;
     padding-right: 25px;
     padding-bottom: 32px;
+    box-sizing: border-box;
   }
 
   .company__wrapper {
-    width: 100%;
+
     padding-top: 23px;
     padding-left: 180px;
     padding-right: 0;
@@ -100,6 +101,7 @@
     background-image: url("../img/main-2005-desktop.png");
     background-size: 244px 362px;
     background-position: -35px 25px;
+    box-sizing: border-box;
   }
 
   .company__title {
