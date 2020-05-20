@@ -38,6 +38,10 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+.page-header__link:active {
+  outline: none;
+}
+
 .page-header__link:hover .page-header__icon-path {
   fill: rgba(255, 255, 255, 0.5);
 }

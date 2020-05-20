@@ -176,7 +176,7 @@
 
         </div>
         <p class="company__details">
-          <a class="company__details-link button">Подробнее</a>
+          <a href="#" class="company__details-link button">Подробнее</a>
         </p>
       </div>
     </section>
@@ -240,7 +240,6 @@
             </div>
           </a>
 
-
         </div>
       </div>
     </section>
@@ -259,12 +258,12 @@
           <div class="contacts__form-container">
             <div class="contacts__form-field ">
               <label for="name" class="visually-hidden"></label>
-              <input class="contacts__input" id="name" type="text" name="name" placeholder="Имя">
+              <input class="contacts__input" id="name" type="text" name="name" placeholder="Имя" required="">
             </div>
 
             <div class="contacts__form-field form-field">
               <label for="phone" class="visually-hidden"></label>
-              <input class="contacts__input" type="tel" id="phone" name="phone-number" placeholder="Телефон" aria-label="Телефон">
+              <input class="contacts__input" type="tel" id="phone" name="phone-number" placeholder="Телефон" aria-label="Телефон" required="">
             </div>
 
             <div class="contacts__form-textarea">
@@ -275,8 +274,8 @@
 
 
             <div class="contacts__form-checkbox">
-              <input class="contacts__checkbox-input visually-hidden" type="checkbox" id="agreement" name="agreement" value="agreement" checked="">
-              <label class="contacts__checkbox-label" for="agreement" tabindex="1">Я согласен на обработку персональных данных</label>
+              <input class="contacts__checkbox-input visually-hidden" type="checkbox" id="agreement" name="agreement" value="agreement" checked="" required="">
+              <label class="contacts__checkbox-label" for="agreement" tabindex="0">Я согласен на обработку персональных данных</label>
             </div>
 
           </div>

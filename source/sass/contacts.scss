@@ -146,6 +146,8 @@
   line-height: 22px;
 }
 
+
+
 .contacts__checkbox-label {
   display: inline-block;
   vertical-align: top;
@@ -158,6 +160,11 @@
   background-size: 10px 10px, 16px 16px;
   background-position: 9px 10px, 6px 8px;
   cursor: pointer;
+}
+
+.contacts__checkbox-label:focus {
+  border: 2px solid yellow;
+  outline: none;
 }
 
 .contacts__checkbox-input:not(:checked) ~ .contacts__checkbox-label[for="agreement"] {
