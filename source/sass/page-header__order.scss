@@ -17,6 +17,11 @@
   color: $color-white;
 }
 
+.page-header__button:hover {
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: $desktop-width) {
   .page-header__order {
     display: none;

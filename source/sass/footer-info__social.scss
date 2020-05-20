@@ -17,6 +17,10 @@
   border-radius: 50%;
 }
 
+.footer-info__social-button:hover svg path {
+  fill: #5f6063;
+}
+
 @media (max-width: $desktop-width) {
   .footer-info__social {
     margin-left: auto;

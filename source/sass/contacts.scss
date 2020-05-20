@@ -130,6 +130,12 @@
   border: 1px solid $color-white;
 }
 
+.contacts__form-button:hover {
+  color: $color-lightblue;
+  border: 1px solid $color-lightblue;
+  background-color: $color-white;
+}
+
 .contacts__form-checkbox {
   width: 270px;
   height: auto;

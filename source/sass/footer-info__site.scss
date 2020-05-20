@@ -43,6 +43,10 @@
   text-decoration: none;
 }
 
+.footer-info__site-item:hover {
+  opacity: 1;
+}
+
 .footer-info__site-columns {
   column-width: 250px;
   column-count: 2;

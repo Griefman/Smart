@@ -81,7 +81,10 @@
   color: $color-lightblue;
 }
 
-
+.company__details-link:hover {
+  background-color: $color-lightblue;
+  color: $color-white;
+}
 @media (max-width: $desktop-width) {
   .company {
     //min-width: 768px;
@@ -93,7 +96,6 @@
   }
 
   .company__wrapper {
-
     padding-top: 23px;
     padding-left: 180px;
     padding-right: 0;

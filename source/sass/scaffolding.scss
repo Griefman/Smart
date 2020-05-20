@@ -24,7 +24,7 @@
 
 $tablet-width: 767px;
 $desktop-width: 1023px;
-$color-lightblue: #00b2ff;
+$color-lightblue: #00a6ff;
 $color-white: #ffffff;
 
 *,
@@ -45,7 +45,6 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-
   margin: 0;
   padding: 0;
   color: $color-white;
@@ -176,7 +175,6 @@ a {
 @media (max-width: $tablet-width) {
   body {
     width: 100%;
-    min-width: 320px;
     background-image: url("../img/header-image-mobile.png"),
       url("../img/header-points-bg-mobile.png"),
       url("../img/body-bg-mobile.png"),

@@ -34,6 +34,14 @@
   color: $color-white;
 }
 
+.page-header__link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page-header__link:hover .page-header__icon-path {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
 .page-header__link-text {
   margin-left: 18px;
 }
