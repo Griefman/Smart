@@ -77,26 +77,37 @@
   font-size: 16px;
   line-height: 22px;
   border: none;
+  outline: none;
   background: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
   color: #ffffff;
 }
 
+.contacts__input:focus,
+.contacts__input:hover {
+  background: rgba(12, 142, 203, 0.42);
+  outline: none;
+  border: none;
+}
 
 ::-webkit-input-placeholder {/*WebKitbrowsers*/
   color: $color-white;
+  border: none;
 }
 
 :-moz-placeholder {/*MozillaFirefox4to18*/
   color: $color-white;
+  border: none;
 }
 
 ::-moz-placeholder {/*MozillaFirefox19+*/
   color: $color-white;
+  border: none;
 }
 
 :-ms-input-placeholder {/*InternetExplorer10+*/
   color: $color-white;
+  border: none;
 }
 
 .contacts__form-textarea {
@@ -121,6 +132,13 @@
   resize: none;
 }
 
+.contacts__textarea:focus,
+.contacts__textarea:hover {
+  background: rgba(12, 142, 203, 0.42);
+  outline: none;
+  border: none;
+}
+
 
 .contacts__form-button {
   padding-top: 13px;
@@ -136,9 +154,9 @@
   background-color: $color-white;
 }
 
-.contacts__form-button:active {
-  outline: none;
-}
+  //.contacts__form-button:active {
+  //  outline: none;
+  //}
 
 .contacts__form-checkbox {
   width: 270px;
@@ -148,9 +166,8 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  order: 1;
 }
-
-
 
 .contacts__checkbox-label {
   display: inline-block;
@@ -166,10 +183,10 @@
   cursor: pointer;
 }
 
-.contacts__checkbox-label:focus {
-  border: 2px solid yellow;
-  outline: none;
-}
+      //.contacts__checkbox-label:focus {
+      //  border: 2px solid yellow;
+      //  outline: none;
+      //}
 
 .contacts__checkbox-label:active {
   border: none;
@@ -183,6 +200,13 @@
   background-position: 6px 8px;
 }
 
+.contacts__checkbox-input:focus ~ .contacts__checkbox-label[for="agreement"] {
+  border: 2px solid lightskyblue;
+}
+
+.contacts__checkbox-input:hover ~ .contacts__checkbox-label[for="agreement"] {
+  color: red;
+}
 
 @media (max-width: $desktop-width) {
   .contacts {

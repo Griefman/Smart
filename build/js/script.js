@@ -1,5 +1,6 @@
 'use strict';
 var KEY_ESC_CODE = 27;
+var body = document.querySelector('body')
 var popUp = document.querySelector('.popup-form');
 var layout = document.querySelector('.modal-layout');
 var buttonOpenPopUp = document.querySelector('.page-header__button');
@@ -14,17 +15,21 @@ buttonOpenPopUp.addEventListener('click', function () {
     popUp.classList.remove('display-hidden');
     layout.classList.remove('display-hidden');
     inputName.focus();
+    body.style.position = 'fixed';
   }
 });
 var closePopUp = function () {
   if (!popUp.classList.contains('display-hidden')) {
     popUp.classList.add('display-hidden');
     layout.classList.add('display-hidden');
+    body.style.position = 'relative';
+
   }
 };
 buttonClosePopUp.addEventListener('click', function () {
   closePopUp();
 });
+
 layout.addEventListener('click', function () {
   closePopUp();
 });
