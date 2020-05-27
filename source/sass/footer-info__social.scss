@@ -8,6 +8,15 @@
   list-style: none;
 }
 
+.footer-info__social-item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.footer-info__social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .footer-info__social-button {
   display: flex;
   align-items: center;
@@ -19,6 +28,10 @@
 
 .footer-info__social-button:hover svg path {
   fill: #5f6063;
+}
+
+.footer-info__social-button:active {
+  outline: none ;
 }
 
 @media (max-width: $desktop-width) {

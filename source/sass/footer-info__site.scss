@@ -28,6 +28,10 @@
   cursor: pointer;
 }
 
+.footer-info__site-toggle:active {
+  outline: none;
+}
+
 .footer-info__site-item {
   margin: 0;
   margin-bottom: 9px;
@@ -45,6 +49,10 @@
 
 .footer-info__site-item:hover {
   opacity: 1;
+}
+
+.footer-info__site-link:active {
+  outline: none;
 }
 
 .footer-info__site-columns {

@@ -40,8 +40,18 @@
   opacity: 0.5;
 }
 
-.footer-info__office-address {
+.footer-info__office-tel {
+  display: block;
   padding-right: 0;
+}
+
+.footer-info__office-tel:hover {
+  opacity: 1;
+}
+
+
+.footer-info__office-tel:active {
+  outline: none;
 }
 
 @media (max-width: $desktop-width) {

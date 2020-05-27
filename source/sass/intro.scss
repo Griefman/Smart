@@ -91,6 +91,11 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+.intro__button-order:active,
+.intro-scroll__btn:active {
+  outline: none;
+}
+
 .intro-scroll__btn {
   display: inline-block;
   vertical-align: top;

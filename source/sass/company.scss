@@ -85,6 +85,11 @@
   background-color: $color-lightblue;
   color: $color-white;
 }
+
+.company__details-link:active {
+  outline: none;
+}
+
 @media (max-width: $desktop-width) {
   .company {
     //min-width: 768px;

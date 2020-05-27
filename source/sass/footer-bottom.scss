@@ -9,7 +9,7 @@
   width: 74.3%;
   margin: 0 auto;
   box-sizing: border-box;
-  opacity: 0.5;
+  //opacity: 0.5;
 }
 
 
@@ -22,6 +22,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #1b2d37;
+  opacity: 0.5  ;
 }
 
 
@@ -35,6 +36,18 @@
 
 .footer-bottom__item:nth-last-child(1) {
   margin-left: auto;
+}
+
+.footer-bottom__item-link {
+  color: #1b2d37;
+}
+
+.footer-bottom__item-link:active {
+  outline: none;
+}
+
+.footer-bottom__item--hover:hover {
+  opacity: 1;
 }
 
 @media (max-width: $desktop-width) {

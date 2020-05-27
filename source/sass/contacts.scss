@@ -136,6 +136,10 @@
   background-color: $color-white;
 }
 
+.contacts__form-button:active {
+  outline: none;
+}
+
 .contacts__form-checkbox {
   width: 270px;
   height: auto;
@@ -164,6 +168,11 @@
 
 .contacts__checkbox-label:focus {
   border: 2px solid yellow;
+  outline: none;
+}
+
+.contacts__checkbox-label:active {
+  border: none;
   outline: none;
 }
 
