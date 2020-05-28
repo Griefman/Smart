@@ -18,19 +18,19 @@
   color: #1b2d37;
 }
 
-.footer-info__site-toggle {
-  display: none;
-  position: relative;
-  width: 18px;
-  height: 18px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
+//.footer-info__site-toggle {
+//  display: none;
+//  position: relative;
+//  width: 18px;
+//  height: 18px;
+//  border: none;
+//  background-color: transparent;
+//  cursor: pointer;
+//}
 
-.footer-info__site-toggle:active {
-  outline: none;
-}
+//.footer-info__site-toggle:active {
+//  outline: none;
+//}
 
 .footer-info__site-item {
   margin: 0;
@@ -74,7 +74,7 @@
   .footer-info__site {
     width: 100%;
     margin-left: 0;
-    padding-top: 30px;
+    padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
     border-top: 1px solid rgba(98, 105, 98, 0.2);
@@ -82,7 +82,10 @@
 
   .footer-info__site-header {
     display: flex;
+    padding-top: 30px;
     justify-content: space-between;
+    cursor: pointer;
+    background-color: red;
   }
 
   .footer-info__site-title {

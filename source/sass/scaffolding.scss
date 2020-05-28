@@ -160,6 +160,10 @@ a {
   z-index: 50;
 }
 
+//.columns {
+//  display: block;
+//}
+
 @media (max-width: $desktop-width) {
   body {
     background-image: url("../img/header-image-tablet.png"),
@@ -189,13 +193,15 @@ a {
       url("../img/toggle-vertical.png");
     background-repeat: no-repeat;
     background-size: 16px 1px, 1px 16px;
-    background-position: 0 8px, 8px 0;
+    background-position: right 20px top 38px, right 28px top 30px;
   }
+
 
   .toggle-minus {
     background-image: url("../img/toggle-horizont.png");
     background-repeat: no-repeat;
     background-size: 16px 1px;
-    background-position: 0 8px;
+    background-position: right 20px top 38px;
   }
+
 }

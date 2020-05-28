@@ -109,6 +109,12 @@
   resize: none;
 }
 
+.popup-form__textarea:focus,
+.popup-form__textarea:hover {
+  background: rgba(12, 142, 203, 0.42);
+  outline: none;
+  border: none;
+}
 
 .popup-form__form-button {
   width: 100%;
@@ -129,6 +135,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  order: 1;
 }
 
 .popup-form__checkbox-label {
@@ -160,6 +167,21 @@
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: 0 2px;
+}
+
+.popup-form__checkbox-input:focus ~ .popup-form__checkbox-label[for="popup-agreement"] {
+  border: 2px solid lightskyblue;
+}
+
+.popup-form__checkbox-input:hover ~ .popup-form__checkbox-label[for="popup-agreement"] {
+  color: red;
+}
+
+.popup-form__input:focus,
+.popup-form__input:hover {
+  background: rgba(12, 142, 203, 0.42);
+  outline: none;
+  border: none;
 }
 
 .popup-form__button-close {

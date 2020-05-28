@@ -4,9 +4,9 @@ var popUp = document.querySelector('.popup-form');
 var layout = document.querySelector('.modal-layout');
 var buttonOpenPopUp = document.querySelector('.page-header__button');
 var buttonClosePopUp = document.querySelector('.popup-form__button-close');
-var toggleSite = document.querySelector('.footer-info__site-toggle');
+var toggleSite = document.querySelector('.footer-info__site-header');
 var siteColumns = document.querySelector('.footer-info__site-columns');
-var toggleOffice = document.querySelector('.footer-info__office-toggle');
+var toggleOffice = document.querySelector('.footer-info__office-header');
 var officeColumns = document.querySelector('.footer-info__office-columns');
 var inputName = document.querySelector('#popup-name');
 buttonOpenPopUp.addEventListener('click', function () {
@@ -34,49 +34,56 @@ document.addEventListener('keydown', function (evt) {
   }
 });
 
-toggleSite.addEventListener('click', function () {
-  if (toggleSite.classList.contains('toggle-plus')) {
-    toggleSite.classList.remove('toggle-plus');
-    toggleSite.classList.add('toggle-minus');
-    siteColumns.style.display = 'block';
-
-  } else {
-    if (toggleSite.classList.contains('toggle-minus')) {
-      toggleSite.classList.remove('toggle-minus');
-      toggleSite.classList.add('toggle-plus');
-      siteColumns.style.display = 'none';
-    }
-  }
-});
-
-toggleOffice.addEventListener('click', function () {
-  if (toggleOffice.classList.contains('toggle-plus')) {
-    toggleOffice.classList.remove('toggle-plus');
-    toggleOffice.classList.add('toggle-minus');
-    officeColumns.style.display = 'block';
-  } else {
-    if (toggleOffice.classList.contains('toggle-minus')) {
-      toggleOffice.classList.remove('toggle-minus');
-      toggleOffice.classList.add('toggle-plus');
-      officeColumns.style.display = 'none';
-    }
-  }
-});
-
-
-// var buttonPluses = document.querySelectorAll('toggle-plus');
-// var columns = document.querySelectorAll('columns')
+// toggleSite.addEventListener('click', function () {
+//   if (toggleSite.classList.contains('toggle-plus')) {
+//     toggleSite.classList.remove('toggle-plus');
+//     toggleSite.classList.add('toggle-minus');
+//     siteColumns.style.display = 'block';
+//     officeColumns.style.display = 'none';
 //
-// buttonPluses.forEach(function (item, index) {
-//   item.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     item.classList.remove('toggle-plus');
-//     item.classList.add('toggle-minus');
-//     columns[index].style.display = 'block';
-//   });
+//   } else {
+//     if (toggleSite.classList.contains('toggle-minus')) {
+//       toggleSite.classList.remove('toggle-minus');
+//       toggleSite.classList.add('toggle-plus');
+//     }
+//   }
+// });
+//
+// toggleOffice.addEventListener('click', function () {
+//   if (toggleOffice.classList.contains('toggle-plus')) {
+//     toggleOffice.classList.remove('toggle-plus');
+//     toggleOffice.classList.add('toggle-minus');
+//     officeColumns.style.display = 'block';
+//   } else {
+//     if (toggleOffice.classList.contains('toggle-minus')) {
+//       toggleOffice.classList.remove('toggle-minus');
+//       toggleOffice.classList.add('toggle-plus');
+//       officeColumns.style.display = 'none';
+//     }
+//   }
 // });
 
+// =======================================================================
+var buttonPluses = document.querySelectorAll('.toggle');
+var columns = document.querySelectorAll('.columns')
 
+buttonPluses.forEach(function (item, index) {
+  item.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (item.classList.contains('toggle-plus')) {
+      item.classList.remove('toggle-plus');
+      item.classList.add('toggle-minus');
+      item.querySelector('.columns').style.display = 'block';
+    } else {
+      item.classList.remove('toggle-plus');
+      item.classList.add('toggle-minus');
+      item.querySelector('.columns').style.display = 'none';
+    }
+
+  });
+});
+
+// ========================================================================
 if (window.localStorage) {
   var elements = document.querySelectorAll('[name]');
   for (var i = 0; i < elements.length; i++) {

@@ -68,7 +68,7 @@
   .footer-info__office {
     width: 100%;
     margin-left: 0;
-    padding-top: 27px;
+    padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
     border-top: 1px solid rgba(98, 105, 98, 0.2);
@@ -77,6 +77,9 @@
   .footer-info__office-header {
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
+    cursor: pointer;
+    background-color: #00fff2;
   }
 
   .footer-info__office-title {

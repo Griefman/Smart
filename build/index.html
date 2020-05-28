@@ -335,10 +335,10 @@
 
         </div>
 
-        <div class="footer-info__site">
-          <div class="footer-info__site-header">
+        <div class="footer-info__site block" aria-label="Разделы сайта">
+          <div class="footer-info__site-header toggle toggle-plus">
             <h3 class="footer-info__site-title">Разделы сайта</h3>
-            <button class="footer-info__site-toggle toggle-plus" aria-label="Показать\скрыть раздел"></button>
+<!--            <button class="footer-info__site-toggle toggle-plus" aria-label="Показать\скрыть раздел"></button>-->
           </div>
 
           <div class="footer-info__site-columns columns">
@@ -374,10 +374,10 @@
           </div>
         </div>
 
-        <div class="footer-info__office">
-          <div class="footer-info__office-header">
+        <div class="footer-info__office block">
+          <div class="footer-info__office-header toggle toggle-minus" aria-label="наш офис">
             <h3 class="footer-info__office-title">наш офис</h3>
-            <button class="footer-info__office-toggle toggle-minus" aria-label="Показать\скрыть раздел"></button>
+<!--            <button class="footer-info__office-toggle toggle-minus" aria-label="Показать\скрыть раздел"></button>-->
           </div>
           <div class="footer-info__office-columns columns">
             <a class="footer-info__office-address">г. Мытищи, Олимпийский проспект, д.10</a>
@@ -388,6 +388,7 @@
 
         </div>
       </div>
+
     </section>
 
     <div class="footer-bottom">
@@ -433,13 +434,13 @@
         <label for="popup-question" class="visually-hidden"></label>
         <textarea class="popup-form__textarea" id="popup-question" name="question" placeholder="Ваш вопрос"></textarea>
       </div>
-      <button class="button popup-form__form-button" type="submit">Отправить</button>
-
 
       <div class="popup-form__form-checkbox">
         <input class="popup-form__checkbox-input visually-hidden" type="checkbox" id="popup-agreement" name="agreement" value="agreement" checked="">
         <label class="popup-form__checkbox-label" for="popup-agreement">Я согласен на обработку персональных данных</label>
       </div>
+      <button class="button popup-form__form-button" type="submit">Отправить</button>
+
 
     </div>
   </form>
