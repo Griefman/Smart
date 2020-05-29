@@ -101,26 +101,21 @@ blocks.forEach(function (item) {
     item.querySelector('.columns').style.display = 'none';
     var blocks1 = document.querySelectorAll('.block');
     if (target.classList.contains('toggle-plus')) {
-      console.log(target.classList);
-
       blocks1.forEach(function (it) {
         it.querySelector('.columns').style.display = 'none';
         it.querySelector('.toggle').classList.remove('toggle-minus');
         it.querySelector('.toggle').classList.add('toggle-plus');
-      })
-        item.querySelector('.columns').style.display = 'block';
-        target.classList.remove('toggle-plus');
-        target.classList.add('toggle-minus');
-      console.log(target.classList);
+      });
+      item.querySelector('.columns').style.display = 'block';
+      target.classList.remove('toggle-plus');
+      target.classList.add('toggle-minus');
     } else if (target.classList.contains('toggle-minus')) {
-      console.log(target.classList);
       item.querySelector('.columns').style.display = 'none';
       target.classList.remove('toggle-minus');
       target.classList.add('toggle-plus');
-      console.log(target.classList);
     }
-  })
-})
+  });
+});
 
 // ===========================================================================
 if (window.localStorage) {

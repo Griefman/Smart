@@ -32,11 +32,11 @@
 }
 
 .services__item-link:active {
-outline: none;
+  outline: none;
 }
 
 .services__item-link:nth-child(3n),
-.services__item-link:nth-last-child(1){
+.services__item-link:nth-last-child(1) {
   margin-right: 0;
 }
 
@@ -89,7 +89,7 @@ outline: none;
   background-color: rgba(27, 45, 55, 0.7);
 }
 
-.services__item:hover .services__item-overlay  {
+.services__item:hover .services__item-overlay {
   background-color: rgba(27, 45, 55, 0.5);
 }
 

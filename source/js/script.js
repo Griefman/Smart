@@ -4,10 +4,6 @@ var popUp = document.querySelector('.popup-form');
 var layout = document.querySelector('.modal-layout');
 var buttonOpenPopUp = document.querySelector('.page-header__button');
 var buttonClosePopUp = document.querySelector('.popup-form__button-close');
-var toggleSite = document.querySelector('.footer-info__site-header');
-var siteColumns = document.querySelector('.footer-info__site-columns');
-var toggleOffice = document.querySelector('.footer-info__office-header');
-var officeColumns = document.querySelector('.footer-info__office-columns');
 var inputName = document.querySelector('#popup-name');
 buttonOpenPopUp.addEventListener('click', function () {
   if (popUp.classList.contains('display-hidden')) {
@@ -64,26 +60,64 @@ document.addEventListener('keydown', function (evt) {
 // });
 
 // =======================================================================
-var buttonPluses = document.querySelectorAll('.toggle');
-var columns = document.querySelectorAll('.columns')
-
-buttonPluses.forEach(function (item, index) {
-  item.addEventListener('click', function (e) {
-    e.preventDefault();
-    if (item.classList.contains('toggle-plus')) {
-      item.classList.remove('toggle-plus');
-      item.classList.add('toggle-minus');
+// var buttonPluses = document.querySelectorAll('.toggle-plus');
+// var buttonMinuses = document.querySelectorAll('.toggle-minus');
+// var columns = document.querySelectorAll('.columns')
+//
+// buttonPluses.forEach(function (item, index) {
+//   item.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     if (item.classList.contains('toggle-plus')) {
+//       item.classList.remove('toggle-plus');
+//       item.classList.add('toggle-minus');
+//       console.log(columns[index]);
+//       columns.forEach(function (item) {
+//         item.style.display = 'none';
+//       })
+//       columns[index].style.display = 'block';
+//     }
+//   });
+// });
+//
+// buttonMinuses.forEach(function (item, index) {
+//   item.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     if (item.classList.contains('toggle-plus')) {
+//       item.classList.remove('toggle-minus');
+//       item.classList.add('toggle-plus');
+//       columns.forEach(function (item) {
+//         item.style.display = 'block';
+//       })
+//       columns[index].style.display = 'none';
+//     }
+//   });
+// });
+// ========================================================================
+var blocks = document.querySelectorAll('.block');
+blocks.forEach(function (item) {
+  item.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    var target = evt.target;
+    item.querySelector('.columns').style.display = 'none';
+    var blocks1 = document.querySelectorAll('.block');
+    if (target.classList.contains('toggle-plus')) {
+      blocks1.forEach(function (it) {
+        it.querySelector('.columns').style.display = 'none';
+        it.querySelector('.toggle').classList.remove('toggle-minus');
+        it.querySelector('.toggle').classList.add('toggle-plus');
+      });
       item.querySelector('.columns').style.display = 'block';
-    } else {
-      item.classList.remove('toggle-plus');
-      item.classList.add('toggle-minus');
+      target.classList.remove('toggle-plus');
+      target.classList.add('toggle-minus');
+    } else if (target.classList.contains('toggle-minus')) {
       item.querySelector('.columns').style.display = 'none';
+      target.classList.remove('toggle-minus');
+      target.classList.add('toggle-plus');
     }
-
   });
 });
 
-// ========================================================================
+// ===========================================================================
 if (window.localStorage) {
   var elements = document.querySelectorAll('[name]');
   for (var i = 0; i < elements.length; i++) {
