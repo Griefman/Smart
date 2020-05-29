@@ -116,7 +116,7 @@
     margin-bottom: 2px;
   }
 
-  .features__item-detective  .features__icon,
+  .features__item-detective .features__icon,
   .features__item-personal .features__icon {
     margin-bottom: 8px;
   }
@@ -125,15 +125,13 @@
     margin-bottom: 8px;
   }
 
-  .features__item-detective  .features__item-title {
+  .features__item-detective .features__item-title {
     margin-bottom: 15px;
   }
 
   .features__item-text {
     padding-right: 20px;
   }
-
-
 }
 
 @media (max-width: $tablet-width) {
