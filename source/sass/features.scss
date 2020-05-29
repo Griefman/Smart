@@ -153,10 +153,14 @@
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 0%;
-    padding-bottom: 30px;
+    padding-bottom: 23px;
     border-left: 2px solid $color-lightblue;
     margin-bottom: 20px;
     box-sizing: border-box;
+  }
+
+  .features__icon {
+    margin-bottom: 8px;
   }
 
   .features__item-partners {

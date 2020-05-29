@@ -79,12 +79,15 @@
     justify-content: space-between;
     padding-top: 30px;
     cursor: pointer;
-    background-color: #00fff2;
+  }
+
+  .footer-info__office-columns {
+    width: 200px;
   }
 
   .footer-info__office-title {
-    margin-bottom: 0;
     padding-bottom: 25px;
+    margin-bottom: 7px;
   }
 
   .footer-info__office-toggle {
@@ -92,7 +95,6 @@
   }
 
   .footer-info__office-address {
-    width: 200px;
     margin-bottom: 6px;
     padding-top: 8px;
     line-height: 25px;

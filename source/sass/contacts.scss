@@ -213,7 +213,6 @@
 @media (max-width: $desktop-width) {
   .contacts {
     width: 100%;
-    //min-width: 768px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 80px;
@@ -278,8 +277,8 @@
     min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 28px;
-    padding-bottom: 45px;
+    padding-top: 23px;
+    padding-bottom: 42px;
   }
 
   .contacts__wrapper {
@@ -298,6 +297,7 @@
     margin-bottom: 15px;
     font-size: 28px;
     line-height: 140.62%;
+    margin-left: 0;
   }
 
   .contacts__form-text {
