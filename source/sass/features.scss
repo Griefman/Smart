@@ -89,7 +89,7 @@
   display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $desktop-width) {
   .features {
     width: 100%;
   }
@@ -101,7 +101,7 @@
   }
 
   .features__item {
-    width: 48.5%;
+    width: 48%;
     min-height: 232px;
     padding-right: 0;
     padding-top: 25px;
@@ -116,13 +116,24 @@
     margin-bottom: 2px;
   }
 
+  .features__item-detective  .features__icon,
+  .features__item-personal .features__icon {
+    margin-bottom: 8px;
+  }
+
   .features__item-title {
     margin-bottom: 8px;
+  }
+
+  .features__item-detective  .features__item-title {
+    margin-bottom: 15px;
   }
 
   .features__item-text {
     padding-right: 20px;
   }
+
+
 }
 
 @media (max-width: $tablet-width) {
