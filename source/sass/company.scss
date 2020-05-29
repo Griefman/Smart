@@ -92,8 +92,6 @@
 
 @media (max-width: $desktop-width) {
   .company {
-    //min-width: 768px;
-    //max-width: 1023px;
     padding-left: 30px;
     padding-right: 25px;
     padding-bottom: 32px;
@@ -101,7 +99,8 @@
   }
 
   .company__wrapper {
-    padding-top: 23px;
+    width: 100%;
+    padding-top: 26px;
     padding-left: 180px;
     padding-right: 0;
     padding-bottom: 50px;
@@ -113,6 +112,7 @@
 
   .company__title {
     font-size: 32px;
+    margin-left: -5px;
   }
 
   .company__text {
