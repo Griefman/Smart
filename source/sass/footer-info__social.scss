@@ -34,14 +34,14 @@
   outline: none;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .footer-info__social {
     margin-left: auto;
     padding-top: 10px;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .footer-info__social {
     margin: 0 auto;
   }

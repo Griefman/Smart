@@ -123,7 +123,7 @@
   background: #0073ff;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .services {
     width: 100%;
     height: auto;
@@ -191,7 +191,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .services {
     width: 100%;
     min-width: 320px;

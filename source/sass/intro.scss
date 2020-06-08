@@ -116,7 +116,7 @@
   background-color: transparent;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .intro {
     padding-left: 30px;
     padding-right: 30px;
@@ -184,7 +184,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .intro {
     padding-left: 15px;
     padding-right: 15px;

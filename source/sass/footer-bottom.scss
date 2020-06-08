@@ -50,7 +50,7 @@
   opacity: 1;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .footer-bottom {
     width: 100%;
     padding-left: 25px;
@@ -68,7 +68,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .footer-bottom__wrapper {
     display: block;
     padding-top: 17px;

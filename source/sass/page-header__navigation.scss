@@ -50,7 +50,7 @@
   margin-left: 18px;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .page-header__link-text {
     display: none;
   }
@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .page-header__list {
     padding-top: 6px;
   }

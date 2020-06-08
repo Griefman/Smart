@@ -1,4 +1,4 @@
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .page-header__logo-text {
     padding: 0;
     margin: 0;
@@ -19,7 +19,7 @@
 }
 
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .page-header__logo-text {
     display: none;
   }
