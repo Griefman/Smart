@@ -130,6 +130,7 @@ if (window.localStorage) {
     })(elements[i]);
   }
 }
+
 var anchors = document.querySelectorAll('a[href*="#"]');
 anchors.forEach(function (item) {
   item.addEventListener('click', function (e) {
@@ -141,6 +142,7 @@ anchors.forEach(function (item) {
     });
   });
 });
+
 window.addEventListener('DOMContentLoaded', function () {
   function setCursorPosition(pos, elem) {
     elem.focus();
